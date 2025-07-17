@@ -13,7 +13,7 @@ body {
   font-family: "neue-haas-grotesk-text", "neue-haas-grotesk-text fallback", sans-serif;
   color: #000;
   background-color: #fff;
-  text-transform: none;
+  text-transform: uppercase;
 }
 
 body {
