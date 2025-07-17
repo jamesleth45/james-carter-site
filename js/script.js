@@ -146,25 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // #endregion
 
 // #region panel scroll lock
-document.addEventListener('DOMContentLoaded', () => {
-  const observer = new MutationObserver(() => {
-    const isAnyPanelOpen = document.querySelector('.panel[data-state="open"]');
-    if (isAnyPanelOpen) {
-      document.documentElement.style.overflow = 'hidden';
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.documentElement.style.overflow = '';
-      document.body.style.overflow = '';
-    }
-  });
 
-  document.querySelectorAll('.panel').forEach(panel => {
-    observer.observe(panel, {
-      attributes: true,
-      attributeFilter: ['data-state'],
-    });
-  });
-});
 // #endregion
 
 //#region Form
