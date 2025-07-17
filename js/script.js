@@ -169,7 +169,17 @@ document.addEventListener('DOMContentLoaded', () => {
 //#endregion
 
 //#region Search
+document.addEventListener('DOMContentLoaded', () => {
+  const clearBtn = document.querySelector('.search__clear');
+  const input = document.querySelector('#siteSearch');
 
+  if (clearBtn && input) {
+    clearBtn.addEventListener('click', () => {
+      input.value = '';
+      input.focus();
+    });
+  }
+});
 //#endregion
 
 //#region Hero
