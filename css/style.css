@@ -234,7 +234,7 @@ fieldset {
 }
 
 @media (min-width: 80rem) {
-  .footer__list-newsletter {
+  .footer__list-form {
     margin-right: 1.6875rem;
   }
 }
