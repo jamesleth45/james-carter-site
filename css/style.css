@@ -391,16 +391,6 @@ fieldset {
 /* #endregion */
 
 /* #region Hero */
-.hero {
-  height: 100svh;
-}
-
-@media (min-width: 80rem) {
-  .hero {
-    margin-top: 0;
-  }
-}
-
 .hero__grid {
   display: grid;
   gap: 0;
@@ -424,7 +414,7 @@ fieldset {
   display: block;
   height: 100svh;
   object-fit: cover;
-  width: 100%;
   padding-top: 3.5rem;
+  width: 100%;
 }
 /* #endregion */
