@@ -102,6 +102,7 @@ textarea {
   color: inherit;
   font: inherit;
   background: transparent;
+  width: 100%;
 }
 
 input::placeholder,
