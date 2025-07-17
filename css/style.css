@@ -85,6 +85,14 @@ fieldset {
   z-index: 101;
 }
 
+@media (min-width: 80rem) {
+  .header__logo {
+    top: 1.6875rem;
+    left: 1.6875rem;
+    padding: 0;
+  }
+}
+
 .header__nav {
   display: none;
 }
