@@ -51,3 +51,14 @@ function openMenu() {
   const menu = document.getElementById("navMenu");
   menu.classList.toggle("show");
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const embeds = document.querySelectorAll(".w-embed");
+
+  embeds.forEach(embed => {
+    const header = embed.querySelector("header");
+    if (header) {
+      embed.replaceWith(header);
+    }
+  });
+});
