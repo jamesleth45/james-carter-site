@@ -165,6 +165,11 @@ fieldset {
     display: none;
   }
 }
+
+.header__mobile-button {
+  width: 2.75rem;
+  height: 3.5rem;
+}
 /* #endregion */
 
 /* #region Footer */
