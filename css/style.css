@@ -78,23 +78,23 @@ fieldset {
 
 /* #region Header */
 .header__logo {
-  position: fixed;
-  top: 0;
+  -webkit-font-smoothing: antialiased;
+  font-family: "neue-haas-grotesk-display", "neue-haas-grotesk-display fallback", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
   left: 0;
   padding: 1.25rem;
+  position: fixed;
+  top: 0;
   z-index: 101;
-  font-family: "neue-haas-grotesk-display", "neue-haas-grotesk-display fallback", sans-serif;
-  font-weight: 700;
-  font-size: 1.25rem;
-  -webkit-font-smoothing: antialiased;
 }
 
 @media (min-width: 80rem) {
   .header__logo {
-    top: 1.6875rem;
+    font-size: 1.67rem;
     left: 1.6875rem;
     padding: 0;
-    font-size: 1.67rem;
+    top: 1.6875rem;
   }
 }
 
