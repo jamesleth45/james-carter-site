@@ -206,6 +206,7 @@ fieldset {
 
 .footer__list:first-child {
   margin-left: 1.6875rem;
+  font-weight: 700;
 }
 
 .footer__list:last-child {
