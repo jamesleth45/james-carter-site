@@ -219,8 +219,8 @@ fieldset {
 }
 
 .hero__link {
-  grid-column: 1 / -1;
   display: block;
+  grid-column: 1 / -1;
   width: 100%;
 }
 
