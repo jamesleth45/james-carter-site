@@ -1,19 +1,4 @@
-loadScript("js/components/header.js");
-loadScript("js/components/footer.js");
-loadScript("js/components/hero.js");
-loadScript("js/components/form.js");
-loadScript("js/components/panel.js");
-loadScript("js/components/search.js");
-
-function loadScript(src) {
-  const s = document.createElement('script');
-  s.src = src;
-  s.defer = true;
-  document.body.appendChild(s);
-}
-
-
-
+//#region Cleanup
 window.addEventListener("load", function () {
   const html = document.documentElement;
   html.removeAttribute("data-wf-domain");
@@ -70,4 +55,28 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+//#endregion
 
+//#region Header
+
+//#endregion
+
+//#region Footer
+
+//#endregion
+
+//#region Panel
+
+//#endregion
+
+//#region Form
+
+//#endregion
+
+//#region Search
+
+//#endregion
+
+//#region Hero
+
+//#endregion
