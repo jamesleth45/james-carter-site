@@ -81,12 +81,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //#region Header
 document.addEventListener("DOMContentLoaded", function () {
-  const currentPath = window.location.pathname;
-  const shopLink = document.querySelector('.header__link[href="/t-shirts"]');
+  const links = document.querySelectorAll(".header__link");
 
-  if (shopLink && (currentPath === "/t-shirts" || currentPath === "/t-shirts/")) {
-    shopLink.classList.add("header__link--selected");
-  }
+  links.forEach(link => {
+    const linkPath = new URL(link.href).pathname;
+    const currentPath = window.location.pathname;
+
+    if (linkPath === currentPath || linkPath === currentPath + "/") {
+      link.classList.add("header__link--selected");
+    }
+  });
 });
 //#endregion
 
