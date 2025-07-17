@@ -111,35 +111,48 @@ document.addEventListener('click', (e) => {
   const openBtn = e.target.closest('[data-target]');
   const closeBtn = e.target.closest('.panel__close');
 
+  // OPEN
   if (openBtn) {
     const targetId = openBtn.getAttribute('data-target');
     const panel = document.getElementById(targetId);
-    if (panel) panel.setAttribute('data-state', 'open');
+    if (panel) {
+      panel.setAttribute('data-state', 'open');
+    }
   }
 
+  // CLOSE via button
   if (closeBtn) {
     const panel = closeBtn.closest('.panel');
-    if (panel) panel.setAttribute('data-state', 'closed');
+    if (panel) closePanel(panel);
   }
 
-  // Click outside to close
-  const openPanels = document.querySelectorAll('.panel[data-state="open"]');
-  openPanels.forEach((panel) => {
+  // CLOSE via outside click
+  document.querySelectorAll('.panel[data-state="open"]').forEach((panel) => {
     const inner = panel.querySelector('.panel__inner');
     if (inner && !inner.contains(e.target) && !e.target.closest('[data-target]')) {
-      panel.setAttribute('data-state', 'closed');
+      closePanel(panel);
     }
   });
 });
 
-// Escape key to close
+// ESC key close
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
     document.querySelectorAll('.panel[data-state="open"]').forEach((panel) => {
-      panel.setAttribute('data-state', 'closed');
+      closePanel(panel);
     });
   }
 });
+
+// Only data-state logic
+function closePanel(panel) {
+  panel.setAttribute('data-state', 'closing');
+
+  // Wait for the CSS transition to finish before hiding
+  setTimeout(() => {
+    panel.setAttribute('data-state', 'closed');
+  }, 500); // match transition duration in CSS
+}
 //#endregion
 
 //#region Form
