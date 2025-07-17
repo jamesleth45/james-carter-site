@@ -122,6 +122,11 @@ fieldset {
   top: 8.75rem;
 }
 
+.header__item--preview,
+.header__item--brand {
+  margin-top: 0.8125rem;
+}
+
 .header__item--search {
   position: fixed;
   right: 1.6875rem;
