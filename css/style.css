@@ -83,11 +83,11 @@ fieldset {
   font-size: 1.25rem;
   font-weight: 700;
   left: 0;
+  line-height: 0.8;
   padding: 1.25rem;
   position: fixed;
   top: 0;
   z-index: 101;
-  line-height: 0.8;
 }
 
 @media (min-width: 80rem) {
