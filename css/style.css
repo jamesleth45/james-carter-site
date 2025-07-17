@@ -219,12 +219,6 @@ fieldset {
 }
 
 @media (min-width: 80rem) {
-  .footer__list:nth-child(2) {
-    margin-top: 0;
-  }
-}
-
-@media (min-width: 80rem) {
   .footer__list {
     grid-column: span 2;
   }
@@ -235,6 +229,10 @@ fieldset {
 
   .footer__list:last-child {
     margin-right: 1.6875rem;
+  }
+
+  .footer__list:nth-child(2) {
+    margin-top: 0;
   }
 }
 
