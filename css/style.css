@@ -11,7 +11,7 @@ html,
 body {
   height: 100%;
   font-family: "neue-haas-grotesk-text", "neue-haas-grotesk-text fallback", sans-serif;
-  color: var(--color-text);
+  color: #000;
   background-color: var(--color-bg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
