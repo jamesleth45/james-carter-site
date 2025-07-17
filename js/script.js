@@ -191,6 +191,25 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 //#endregion
 
+// #region Search input autofocus
+document.addEventListener('DOMContentLoaded', () => {
+  const observer = new MutationObserver(() => {
+    const searchPanel = document.getElementById('panelSearch');
+    if (searchPanel?.getAttribute('data-state') === 'open') {
+      const input = searchPanel.querySelector('input[type="search"]');
+      if (input) input.focus();
+    }
+  });
+
+  observer.observe(document.body, {
+    attributes: true,
+    subtree: true,
+    attributeFilter: ['data-state']
+  });
+});
+// #endregion
+
+
 //#region Hero
 
 //#endregion
