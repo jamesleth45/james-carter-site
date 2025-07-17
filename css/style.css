@@ -74,6 +74,13 @@ fieldset {
   background-color: #000;
   color: #fff;
 }
+
+@media (hover: hover) {
+  a:hover,
+  button:hover {
+    font-weight: 700;
+  }
+}
 /* #endregion */
 
 /* #region Header */
