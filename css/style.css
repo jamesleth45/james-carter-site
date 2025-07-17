@@ -77,10 +77,12 @@ fieldset {
 /* #endregion */
 
 /* #region Header */
-.header__list--left {
-  left: 1.6875rem;
-  position: fixed;
-  top: 8.75rem;
+@media (min-width: 80rem) {
+  .header__list--left {
+    left: 1.6875rem;
+    position: fixed;
+    top: 8.75rem;
+  }
 }
 
 .header__list--right {
