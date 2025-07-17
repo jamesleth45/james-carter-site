@@ -200,5 +200,14 @@ fieldset {
 /* #endregion */
 
 /* #region Hero */
+.hero {
+  margin-top: 3.5rem;
+}
 
+.hero__grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 0;
+  width: 100%;
+}
 /* #endregion */
