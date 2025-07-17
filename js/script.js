@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //#endregion
 
-// #region panel open
+// #region Panel open
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('[data-target]').forEach((btn) => {
     btn.addEventListener('click', () => {
@@ -141,6 +141,25 @@ document.addEventListener('DOMContentLoaded', () => {
         panel.setAttribute('data-state', 'closed');
       });
     }
+  });
+});
+// #endregion
+
+// #region panel scroll lock
+document.addEventListener('DOMContentLoaded', () => {
+  const observer = new MutationObserver(() => {
+    const isAnyPanelOpen = document.querySelector('.panel[data-state="open"]');
+    if (isAnyPanelOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.removeAttribute('style');
+    }
+  });
+
+  observer.observe(document.body, {
+    attributes: true,
+    subtree: true,
+    attributeFilter: ['data-state'],
   });
 });
 // #endregion
