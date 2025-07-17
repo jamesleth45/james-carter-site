@@ -170,6 +170,10 @@ fieldset {
   width: 2.75rem;
   height: 3.5rem;
 }
+
+.header__mobile-button--menu {
+  margin-right: 0.625rem;
+}
 /* #endregion */
 
 /* #region Footer */
