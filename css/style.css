@@ -83,13 +83,13 @@ fieldset {
     position: fixed;
     top: 8.75rem;
   }
-}
 
-.header__list--right {
-  position: fixed;
-  right: 1.6875rem;
-  text-align: right;
-  top: 8.75rem;
+  .header__list--right {
+    position: fixed;
+    right: 1.6875rem;
+    text-align: right;
+    top: 8.75rem;
+  }
 }
 
 .header__mobile {
