@@ -270,22 +270,20 @@ fieldset {
 /* #endregion */
 
 /* #region Panel */
-.panel {
-  position: fixed;
-  inset: 0;
-  z-index: 100;
-}
-
-.panel {
-  pointer-events: none;
+/* initial state */
+.panel[data-state="closed"] {
   opacity: 0;
+  pointer-events: none;
 }
 
-.panel[data-state="open"] {
-  pointer-events: auto;
+/* when opened */
+.panel[data-state="open"],
+.panel[data-state="closing"] {
   opacity: 1;
+  pointer-events: auto;
 }
 
+/* slide logic */
 .panel__inner {
   transform: translateX(100%);
   transition: transform 450ms cubic-bezier(0.19, 1, 0.22, 1) 50ms;
@@ -295,6 +293,11 @@ fieldset {
 .panel[data-state="open"] .panel__inner {
   transform: translateX(0);
   transition: transform 650ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.panel[data-state="closing"] .panel__inner {
+  transform: translateX(100%);
+  transition: transform 450ms cubic-bezier(0.19, 1, 0.22, 1) 50ms;
 }
 
 .panel__grid {
