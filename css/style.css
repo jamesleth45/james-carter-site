@@ -9,16 +9,16 @@
 
 html,
 body {
-  height: 100%;
-  font-family: "neue-haas-grotesk-text", "neue-haas-grotesk-text fallback", sans-serif;
-  color: #000;
   background-color: #fff;
+  color: #000;
+  font-family: "neue-haas-grotesk-text", "neue-haas-grotesk-text fallback", sans-serif;
+  height: 100%;
   text-transform: uppercase;
 }
 
 body {
-  line-height: .8125rem;
   font-size: .625rem;
+  line-height: .8125rem;
 }
 
 img,
@@ -26,20 +26,20 @@ svg,
 video,
 canvas {
   display: block;
-  max-width: 100%;
   height: auto;
+  max-width: 100%;
 }
 
 button,
 input,
 textarea,
 select {
-  font: inherit;
-  color: inherit;
+  appearance: none;
   background: none;
   border: none;
+  color: inherit;
+  font: inherit;
   outline: none;
-  appearance: none;
 }
 
 a {
