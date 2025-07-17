@@ -168,13 +168,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //#endregion
 
-//#region Search
+// #region Search input logic
 document.addEventListener('DOMContentLoaded', () => {
   const input = document.querySelector('#siteSearch');
   const clearBtn = document.querySelector('.search__clear');
+  const searchPanel = document.getElementById('panelSearch');
 
-  if (!input || !clearBtn) return;
+  if (!input || !clearBtn || !searchPanel) return;
 
+  // Show/hide clear button while typing
   input.addEventListener('input', () => {
     if (input.value.trim() !== '') {
       clearBtn.removeAttribute('hidden');
@@ -183,13 +185,31 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // Clear input and refocus
   clearBtn.addEventListener('click', () => {
     input.value = '';
     input.focus();
     clearBtn.setAttribute('hidden', '');
   });
+
+  // Watch for panel open/close
+  const observer = new MutationObserver(() => {
+    const isOpen = searchPanel.getAttribute('data-state') === 'open';
+
+    if (isOpen) {
+      input.focus();
+    } else {
+      input.value = '';
+      clearBtn.setAttribute('hidden', '');
+    }
+  });
+
+  observer.observe(searchPanel, {
+    attributes: true,
+    attributeFilter: ['data-state']
+  });
 });
-//#endregion
+// #endregion
 
 // #region Search input autofocus
 document.addEventListener('DOMContentLoaded', () => {
