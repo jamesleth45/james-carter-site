@@ -1,5 +1,3 @@
-// script.js – master loader
-
 function loadScript(src) {
   const s = document.createElement('script');
   s.src = src;
@@ -7,7 +5,9 @@ function loadScript(src) {
   document.body.appendChild(s);
 }
 
-// Load modules
-loadScript('js/core.js');
-loadScript('js/ui.js');
-loadScript('js/animations.js');
+// Use full CDN paths here:
+const cdn = "https://cdn.jamescarter.eu/js/";
+
+loadScript(`${cdn}core.js`);
+loadScript(`${cdn}ui.js`);
+loadScript(`${cdn}animations.js`);
