@@ -420,7 +420,7 @@ fieldset {
 
 @media (min-width: 80rem) {
   .hero__image {
-    padding-top: 3.5rem;
+    padding-top: 0;
   }
 }
 /* #endregion */
