@@ -214,6 +214,16 @@ fieldset {
   font-weight: 700;
 }
 
+.footer__list:nth-child(2) {
+  margin-top: 2.5rem;
+}
+
+@media (min-width: 80rem) {
+  .footer__list:nth-child(2) {
+    margin-top: 0;
+  }
+}
+
 @media (min-width: 80rem) {
   .footer__list {
     grid-column: span 2;
