@@ -19,6 +19,7 @@ body {
 body {
   font-size: .75rem;
   line-height: .9375rem;
+  letter-spacing: .03em;
 }
 
 @media (min-width: 48rem) {
