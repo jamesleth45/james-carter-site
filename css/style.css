@@ -207,11 +207,11 @@ fieldset {
   grid-column: 1 / -1;
 }
 
-.footer__list:first-child {
+.footer__list-region {
   font-weight: 700;
 }
 
-.footer__list:nth-child(2) {
+.footer__list-main {
   margin-top: 2.5rem;
 }
 
@@ -220,25 +220,25 @@ fieldset {
     grid-column: span 2;
   }
 
-  .footer__list:first-child {
+  .footer__list-region {
     margin-left: 1.6875rem;
   }
 
-  .footer__list:last-child {
+  .footer__list-newsletter {
     margin-right: 1.6875rem;
   }
 
-  .footer__list:nth-child(2) {
+  .footer__list-main {
     margin-top: 0;
   }
 }
 
-.footer__list:nth-child(4) {
+.footer__list-social {
   display: none;
 }
 
 @media (min-width: 80rem) {
-  .footer__list:nth-child(4) {
+  .footer__list-social {
     display: block;
   }
 }
