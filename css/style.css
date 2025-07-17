@@ -61,8 +61,8 @@ fieldset {
 }
 
 ::selection {
-  background-color: var(--color-accent);
-  color: var(--color-bg);
+  background-color: #000;
+  color: #fff;
 }
 /* #endregion */
 
