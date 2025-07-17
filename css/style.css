@@ -169,6 +169,9 @@ fieldset {
 .header__mobile-button {
   width: 2.75rem;
   height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header__mobile-button--menu {
