@@ -241,6 +241,19 @@ fieldset {
   align-items: center;
   gap: 0.625rem;
 }
+
+.footer__link,
+.footer__button {
+  line-height: 1.5625rem;
+}
+
+@media (min-width: 80rem) {
+  .footer__link,
+  .footer__button {
+    line-height: inherit;
+  }
+}
+
 /* #endregion */
 
 /* #region Panel */
