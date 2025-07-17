@@ -413,7 +413,11 @@ input[type="search"]::-webkit-search-results-decoration {
 /* #endregion */
 
 /* #region Search */
-
+.search__clear {
+  display: none;
+  /* OR if you want to animate in/out later: */
+  /* opacity: 0; pointer-events: none; transition: opacity 0.2s ease; */
+}
 /* #endregion */
 
 /* #region Hero */
