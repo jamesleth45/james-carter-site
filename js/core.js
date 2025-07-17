@@ -3,7 +3,8 @@ window.addEventListener("load", function () {
   html.removeAttribute("data-wf-domain");
   html.removeAttribute("data-wf-page");
   html.removeAttribute("data-wf-site");
-  html.classList.remove("w-mod-js");
+  html.classList.remove("w-mod-js", "w-mod-touch");
+  if (!html.classList.length) html.removeAttribute("class");
   html.setAttribute("lang", "en");
   html.setAttribute("dir", "ltr");
 
@@ -17,7 +18,9 @@ window.addEventListener("load", function () {
   });
 
   document.querySelectorAll("script").forEach((script) => {
-    if (!script.src && script.textContent.trim() === "") script.remove();
+    const content = script.textContent.trim();
+    if (!script.src && content === "") script.remove();
+    if (content.includes("w-mod-") && content.includes("ontouchstart")) script.remove();
   });
 
   document.querySelectorAll("style").forEach((style) => {
