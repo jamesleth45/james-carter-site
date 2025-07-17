@@ -82,6 +82,7 @@ fieldset {
   top: 0;
   left: 0;
   padding: 1.25rem;
+  z-index: 101;
 }
 
 @media (min-width: 80rem) {
