@@ -107,7 +107,39 @@ document.addEventListener("DOMContentLoaded", function () {
 //#endregion
 
 //#region Panel
+document.addEventListener('click', (e) => {
+  const openBtn = e.target.closest('[data-target]');
+  const closeBtn = e.target.closest('.panel__close');
 
+  if (openBtn) {
+    const targetId = openBtn.getAttribute('data-target');
+    const panel = document.getElementById(targetId);
+    if (panel) panel.setAttribute('data-state', 'open');
+  }
+
+  if (closeBtn) {
+    const panel = closeBtn.closest('.panel');
+    if (panel) panel.setAttribute('data-state', 'closed');
+  }
+
+  // Click outside to close
+  const openPanels = document.querySelectorAll('.panel[data-state="open"]');
+  openPanels.forEach((panel) => {
+    const inner = panel.querySelector('.panel__inner');
+    if (inner && !inner.contains(e.target) && !e.target.closest('[data-target]')) {
+      panel.setAttribute('data-state', 'closed');
+    }
+  });
+});
+
+// Escape key to close
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.panel[data-state="open"]').forEach((panel) => {
+      panel.setAttribute('data-state', 'closed');
+    });
+  }
+});
 //#endregion
 
 //#region Form
