@@ -417,4 +417,10 @@ fieldset {
   padding-top: 3.5rem;
   width: 100%;
 }
+
+@media (min-width: 80rem) {
+  .hero__image {
+    padding-top: 3.5rem;
+  }
+}
 /* #endregion */
