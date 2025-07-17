@@ -317,6 +317,16 @@ fieldset {
     grid-column: 9 / 13;
   }
 }
+
+.panel__text {
+  display: none;
+}
+
+@media (min-width: 80rem) {
+  .panel__icon {
+    display: none;
+  }
+}
 /* #endregion */
 
 /* #region Form */
