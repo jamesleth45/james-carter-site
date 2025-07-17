@@ -413,9 +413,7 @@ input[type="search"]::-webkit-search-results-decoration {
 /* #endregion */
 
 /* #region Search */
-.search__clear {
-  display: none;
-}
+
 /* #endregion */
 
 /* #region Hero */
