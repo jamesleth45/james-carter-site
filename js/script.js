@@ -80,7 +80,14 @@ document.addEventListener("DOMContentLoaded", () => {
 //#endregion
 
 //#region Header
+document.addEventListener("DOMContentLoaded", function () {
+  const currentPath = window.location.pathname;
+  const shopLink = document.querySelector('.header__link[href="/t-shirts"]');
 
+  if (shopLink && (currentPath === "/t-shirts" || currentPath === "/t-shirts/")) {
+    shopLink.classList.add("header__link--selected");
+  }
+});
 //#endregion
 
 //#region Footer
