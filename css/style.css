@@ -124,6 +124,12 @@ fieldset {
   }
 }
 
+.header__item--search {
+  position: fixed;
+  top: 1.6875rem;
+  right: 1.6875rem;
+}
+
 .header__mobile {
   backdrop-filter: blur(10px);
   background-color: rgb(255,255,255,0.9);
