@@ -306,7 +306,7 @@ fieldset {
 }
 
 @media (min-width: 80rem) {
-  .panel__close {
+  .panel__inner {
     grid-column: 9 / 13;
   }
 }
