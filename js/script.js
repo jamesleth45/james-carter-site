@@ -61,15 +61,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   };
 
-  // 🔁 Attempt removal multiple times in case Webflow adds it late
   let attempts = 0;
   const interval = setInterval(() => {
     removeCurrentClasses();
     attempts++;
-    if (attempts > 20) clearInterval(interval); // Stop after 2 seconds
+    if (attempts > 20) clearInterval(interval);
   }, 100);
 
-  // 🕵️ MutationObserver for any new additions after that
   const observer = new MutationObserver(() => {
     removeCurrentClasses();
   });
