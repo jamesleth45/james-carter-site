@@ -209,13 +209,13 @@ fieldset {
     grid-column: span 2;
   }
 
-  .footer__list:first-child,
-  .footer__list:last-child {
+  .footer__list:first-child {
     margin-left: 1.6875rem;
+    font-weight: 700;
   }
 
-  .footer__list:first-child {
-    font-weight: 700;
+  .footer__list:last-child {
+    margin-right: 1.6875rem;
   }
 }
 
