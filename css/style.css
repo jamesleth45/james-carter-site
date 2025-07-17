@@ -207,12 +207,18 @@ fieldset {
   grid-column: 1 / -1;
 }
 
+@media (min-width: 80rem) {
+  .footer__list {
+    grid-column: span 2;
+  }
+}
+
 .footer__list-region {
   font-weight: 700;
 }
 
 @media (min-width: 80rem) {
-r__list-region {
+  .footer__list-region {
     margin-left: 1.6875rem;
   }
 }
@@ -222,20 +228,14 @@ r__list-region {
 }
 
 @media (min-width: 80rem) {
-  .footer__list {
-    grid-column: span 2;
-  }
-
-  .footer__list-region {
-    margin-left: 1.6875rem;
-  }
-
-  .footer__list-newsletter {
-    margin-right: 1.6875rem;
-  }
-
   .footer__list-main {
     margin-top: 0;
+  }
+}
+
+@media (min-width: 80rem) {
+  .footer__list-newsletter {
+    margin-right: 1.6875rem;
   }
 }
 
