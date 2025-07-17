@@ -313,7 +313,7 @@ fieldset {
 
 .hero__image {
   display: block;
-  height: 100%;
+  height: 100vh;
   object-fit: cover;
   width: 100%;
 }
