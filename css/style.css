@@ -1,0 +1,33 @@
+body {
+  background: #f0f0f0;
+  font-family: sans-serif;
+  text-align: center;
+  padding-top: 100px;
+}
+
+h1 {
+  color: #222;
+  font-size: 3rem;
+  animation: pop 0.5s ease-out forwards;
+}
+
+button {
+  background: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
