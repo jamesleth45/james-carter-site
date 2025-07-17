@@ -271,18 +271,18 @@ fieldset {
 
 /* #region Panel */
 .panel {
-  position: fixed;
-  z-index: 100;
-  opacity: 0;
-  transition: opacity 0s linear 450ms;
-  pointer-events: none;
   inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  transition: opacity 0s linear 450ms;
+  z-index: 100;
 }
 
 .panel[data-state="open"] {
   opacity: 1;
-  transition-delay: 0s;
   pointer-events: auto;
+  transition-delay: 0s;
 }
 
 .panel__grid {
@@ -298,15 +298,15 @@ fieldset {
   display: flex;
   height: 3.5rem;
   justify-content: center;
+  margin-right: 0.625rem;
+  opacity: 0;
+  pointer-events: none;
   position: fixed;
   right: 0;
   top: 0;
+  transition: opacity 250ms cubic-bezier(0.215, 0.61, 0.355, 1);
   width: 2.25rem;
   z-index: 100;
-  margin-right: 0.625rem;
-  transition: opacity 250ms cubic-bezier(0.215, 0.61, 0.355, 1);
-  pointer-events: none;
-  opacity: 0;
 }
 
 @media (min-width: 80rem) {
@@ -320,27 +320,8 @@ fieldset {
 
 .panel[data-state="open"] .panel__close {
   opacity: 1;
-  transition: opacity 350ms cubic-bezier(0.215, 0.61, 0.355, 1) 150ms;
   pointer-events: auto;
-}
-
-.panel__inner {
-  display: grid;
-  grid-column: 9 / 13;
-  grid-template-columns: repeat(4, 1fr);
-  padding: 8.75rem 1.6875rem 1.6875rem .625rem;
-  overflow-y: auto;
-  background-color: #fff;
-}
-
-.panel[data-state="closed"] .panel__inner {
-  transition: transform 450ms cubic-bezier(0.19, 1, 0.22, 1) 50ms;
-  transform: translateX(100%);
-}
-
-.panel[data-state="open"] .panel__inner {
-  transition: transform 650ms cubic-bezier(0.19, 1, 0.22, 1);
-  transform: translateX(0);
+  transition: opacity 350ms cubic-bezier(0.215, 0.61, 0.355, 1) 150ms;
 }
 
 .panel__text {
@@ -357,6 +338,26 @@ fieldset {
   .panel__icon {
     display: none;
   }
+}
+
+.panel__inner {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.9);
+  display: grid;
+  grid-column: 9 / 13;
+  grid-template-columns: repeat(4, 1fr);
+  overflow-y: auto;
+  padding: 8.75rem 1.6875rem 1.6875rem .625rem;
+}
+
+.panel[data-state="closed"] .panel__inner {
+  transform: translateX(100%);
+  transition: transform 450ms cubic-bezier(0.19, 1, 0.22, 1) 50ms;
+}
+
+.panel[data-state="open"] .panel__inner {
+  transform: translateX(0);
+  transition: transform 650ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .panel__content {
