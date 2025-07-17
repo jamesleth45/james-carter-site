@@ -208,15 +208,15 @@ fieldset {
   .footer__list {
     grid-column: span 2;
   }
-}
 
-.footer__list:first-child {
-  margin-left: 1.6875rem;
-  font-weight: 700;
-}
+  .footer__list:first-child,
+  .footer__list:last-child {
+    margin-left: 1.6875rem;
+  }
 
-.footer__list:last-child {
-  margin-left: 1.6875rem;
+  .footer__list:first-child {
+    font-weight: 700;
+  }
 }
 
 .footer__button {
