@@ -77,7 +77,7 @@ fieldset {
 /* #endregion */
 
 /* #region Header */
-.header {
+.header__mobile {
   background-color: #fff;
   height: 3.5rem;
   position: fixed;
