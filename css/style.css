@@ -211,6 +211,12 @@ fieldset {
   font-weight: 700;
 }
 
+@media (min-width: 80rem) {
+r__list-region {
+    margin-left: 1.6875rem;
+  }
+}
+
 .footer__list-main {
   margin-top: 2.5rem;
 }
