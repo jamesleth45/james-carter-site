@@ -45,3 +45,9 @@ window.addEventListener("load", function () {
     currentNode.parentNode.removeChild(currentNode);
   }
 });
+
+
+function openMenu() {
+  const menu = document.getElementById("navMenu");
+  menu.classList.toggle("show");
+}
