@@ -82,12 +82,12 @@ document.addEventListener("DOMContentLoaded", () => {
 //#region Header
 document.addEventListener("DOMContentLoaded", function () {
   const links = document.querySelectorAll(".header__link");
+  const currentPath = window.location.pathname.replace(/\/$/, ""); // remove trailing slash
 
   links.forEach(link => {
-    const linkPath = new URL(link.href).pathname;
-    const currentPath = window.location.pathname;
+    const linkPath = new URL(link.href).pathname.replace(/\/$/, ""); // same, remove trailing slash
 
-    if (linkPath === currentPath || linkPath === currentPath + "/") {
+    if (linkPath === currentPath) {
       link.classList.add("header__link--selected");
     }
   });
