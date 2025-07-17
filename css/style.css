@@ -84,6 +84,12 @@ fieldset {
   width: 100%;
   z-index: 100;
 }
+
+@media (min-width: 80rem) {
+  .header__mobile {
+    display: none;
+  }
+}
 /* #endregion */
 
 /* #region Footer */
