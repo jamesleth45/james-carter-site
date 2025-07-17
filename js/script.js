@@ -55,8 +55,31 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  document.querySelectorAll(".w--current").forEach(el => {
-    el.classList.remove("w--current");
+  const removeCurrentClasses = () => {
+    document.querySelectorAll(".w--current").forEach(el => {
+      el.classList.remove("w--current");
+    });
+  };
+
+  // Run immediately
+  removeCurrentClasses();
+
+  // Watch for new nodes Webflow might add
+  const observer = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+      mutation.addedNodes.forEach((node) => {
+        if (node.nodeType === 1 && node.classList.contains("w--current")) {
+          node.classList.remove("w--current");
+        }
+        // Also recheck the full doc just in case
+        removeCurrentClasses();
+      });
+    });
+  });
+
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true,
   });
 });
 //#endregion
