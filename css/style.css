@@ -445,6 +445,10 @@ select:focus {
   top: 0;
   right: 0;
 }
+
+.search {
+  padding-right: 1.6875rem;
+}
 /* #endregion */
 
 /* #region Hero */
