@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+window.addEventListener("load", function () {
   const removeByHref = ["webflow.shared"];
   const removeBySrc = ["jquery", "webflow."];
 
