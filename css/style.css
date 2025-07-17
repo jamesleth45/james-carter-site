@@ -393,6 +393,7 @@ fieldset {
 /* #region Hero */
 .hero {
   margin-top: 3.5rem;
+  height: 100svh;
 }
 
 @media (min-width: 80rem) {
@@ -422,7 +423,7 @@ fieldset {
 
 .hero__image {
   display: block;
-  height: 100vh;
+  height: 100svh;
   object-fit: cover;
   width: 100%;
 }
