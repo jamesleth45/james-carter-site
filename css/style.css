@@ -446,7 +446,7 @@ select:focus {
   right: 0;
 }
 
-.search {
+.search__input {
   padding-right: 1.6875rem;
 }
 /* #endregion */
