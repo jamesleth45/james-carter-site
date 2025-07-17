@@ -358,6 +358,20 @@ fieldset {
     display: none;
   }
 }
+
+.panel__content {
+  grid-column: span 3;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  pointer-events: none;
+}
+
+.panel[data-state="open"] .panel__content {
+  opacity: 1;
+  transition: opacity 350ms cubic-bezier(0.215, 0.61, 0.355, 1) 150ms;
+  pointer-events: auto;
+}
 /* #endregion */
 
 /* #region Form */
