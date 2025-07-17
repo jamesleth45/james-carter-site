@@ -274,11 +274,16 @@ fieldset {
   position: fixed;
   inset: 0;
   z-index: 100;
-  display: none;
+}
+
+.panel {
+  pointer-events: none;
+  opacity: 0;
 }
 
 .panel[data-state="open"] {
-  display: block;
+  pointer-events: auto;
+  opacity: 1;
 }
 
 .panel__grid {
