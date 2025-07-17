@@ -124,6 +124,19 @@ fieldset {
   }
 }
 
+.header__list--left {
+  position: fixed;
+  left: 1.6875rem;
+  top: 8.75rem;
+}
+
+.header__list--right {
+  position: fixed;
+  right: 1.6875rem;
+  text-align: right;
+  top: 8.75rem;
+}
+
 .header__item--search {
   position: fixed;
   top: 1.6875rem;
