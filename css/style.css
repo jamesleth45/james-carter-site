@@ -236,6 +236,13 @@ fieldset {
   }
 }
 
+@media (min-width: 80rem) {
+  .footer__list:nth-child(4) {
+    display: none;
+  }
+}
+
+
 .footer__button {
   display: inline-flex;
   align-items: center;
