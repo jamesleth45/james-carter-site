@@ -77,6 +77,13 @@ fieldset {
 /* #endregion */
 
 /* #region Header */
+.header__logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1.25rem;
+}
+
 @media (min-width: 80rem) {
   .header__list--left {
     left: 1.6875rem;
