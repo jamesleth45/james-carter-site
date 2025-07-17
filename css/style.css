@@ -187,10 +187,17 @@ fieldset {
 /* #region Footer */
 @media (min-width: 80rem) {
   .footer {
-    padding-top: 1.6875rem;
-    padding-bottom: 1.6875rem;
     border-top: 1px solid #eee;
+    padding-bottom: 1.6875rem;
+    padding-top: 1.6875rem;
   }
+}
+
+.footer__grid {
+  display: grid;
+  gap: 0;
+  grid-template-columns: repeat(12, 1fr);
+  width: 100%;
 }
 /* #endregion */
 
