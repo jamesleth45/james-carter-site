@@ -109,24 +109,9 @@ fieldset {
   }
 }
 
-@media (min-width: 80rem) {
-  .header__list--left {
-    left: 1.6875rem;
-    position: fixed;
-    top: 8.75rem;
-  }
-
-  .header__list--right {
-    position: fixed;
-    right: 1.6875rem;
-    text-align: right;
-    top: 8.75rem;
-  }
-}
-
 .header__list--left {
-  position: fixed;
   left: 1.6875rem;
+  position: fixed;
   top: 8.75rem;
 }
 
@@ -139,8 +124,8 @@ fieldset {
 
 .header__item--search {
   position: fixed;
-  top: 1.6875rem;
   right: 1.6875rem;
+  top: 1.6875rem;
 }
 
 .header__mobile {
