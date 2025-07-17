@@ -12,7 +12,7 @@ body {
   height: 100%;
   font-family: "neue-haas-grotesk-text", "neue-haas-grotesk-text fallback", sans-serif;
   color: #000;
-  background-color: var(--color-bg);
+  background-color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
