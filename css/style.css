@@ -98,7 +98,6 @@ input[type="password"],
 textarea {
   background: transparent;
   border-bottom: 1px solid #000;
-  border: none;
   color: inherit;
   font: inherit;
   padding: 0 0 0.3125rem;
