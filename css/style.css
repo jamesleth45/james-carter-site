@@ -1,17 +1,3 @@
-body {
-  background-color: #f2f2f2;
-  font-family: sans-serif;
-  text-align: center;
-  padding-top: 100px;
-}
-
-h1 {
-  color: #222;
-  font-size: 3rem;
-}
-
-.test-message {
-  color: red;
-  font-size: 1.5rem;
-  margin-top: 40px;
-}
+@import url('./base.css');
+@import url('./components.css');
+@import url('./animations.css');

@@ -1,0 +1,11 @@
+/* Base styles */
+body {
+  background-color: #f2f2f2;
+  font-family: sans-serif;
+  padding: 100px;
+  text-align: center;
+}
+h1 {
+  font-size: 3rem;
+  color: #222;
+}
