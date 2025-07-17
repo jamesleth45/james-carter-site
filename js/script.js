@@ -53,12 +53,12 @@ function openMenu() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const embeds = document.querySelectorAll(".w-embed");
-
-  embeds.forEach(embed => {
+  document.querySelectorAll(".w-embed").forEach(embed => {
     const inner = embed.firstElementChild;
-    if (inner) {
+    if (inner && embed.childElementCount === 1) {
+      // Move the inner element outside the wrapper
       embed.replaceWith(inner);
     }
   });
 });
+
