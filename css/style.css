@@ -85,6 +85,16 @@ fieldset {
   z-index: 101;
 }
 
+.header__nav {
+  display: none;
+}
+
+@media (min-width: 80rem) {
+  .header__nav {
+    display: block;
+  }
+}
+
 @media (min-width: 80rem) {
   .header__list--left {
     left: 1.6875rem;
