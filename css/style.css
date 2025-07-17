@@ -392,7 +392,6 @@ fieldset {
 
 /* #region Hero */
 .hero {
-  margin-top: 3.5rem;
   height: 100svh;
 }
 
@@ -426,5 +425,6 @@ fieldset {
   height: 100svh;
   object-fit: cover;
   width: 100%;
+  padding-top: 3.5rem;
 }
 /* #endregion */
