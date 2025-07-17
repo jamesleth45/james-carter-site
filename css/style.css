@@ -96,12 +96,12 @@ input[type="email"],
 input[type="tel"],
 input[type="password"],
 textarea {
-  border: none;
+  background: transparent;
   border-bottom: 1px solid #000;
-  padding: 0 0 0.3125rem;
+  border: none;
   color: inherit;
   font: inherit;
-  background: transparent;
+  padding: 0 0 0.3125rem;
   width: 100%;
 }
 
