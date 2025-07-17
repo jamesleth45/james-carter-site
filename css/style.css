@@ -201,7 +201,13 @@ fieldset {
 }
 
 .footer__list {
-  grid-column: span 2;
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 80rem) {
+  .footer__list {
+    grid-column: span 2;
+  }
 }
 
 .footer__list:first-child {
