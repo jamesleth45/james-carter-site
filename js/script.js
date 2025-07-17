@@ -61,20 +61,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   };
 
-  // Run immediately
-  removeCurrentClasses();
+  // 🔁 Attempt removal multiple times in case Webflow adds it late
+  let attempts = 0;
+  const interval = setInterval(() => {
+    removeCurrentClasses();
+    attempts++;
+    if (attempts > 20) clearInterval(interval); // Stop after 2 seconds
+  }, 100);
 
-  // Watch for new nodes Webflow might add
-  const observer = new MutationObserver((mutations) => {
-    mutations.forEach((mutation) => {
-      mutation.addedNodes.forEach((node) => {
-        if (node.nodeType === 1 && node.classList.contains("w--current")) {
-          node.classList.remove("w--current");
-        }
-        // Also recheck the full doc just in case
-        removeCurrentClasses();
-      });
-    });
+  // 🕵️ MutationObserver for any new additions after that
+  const observer = new MutationObserver(() => {
+    removeCurrentClasses();
   });
 
   observer.observe(document.body, {
