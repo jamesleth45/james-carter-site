@@ -170,15 +170,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //#region Search
 document.addEventListener('DOMContentLoaded', () => {
-  const clearBtn = document.querySelector('.search__clear');
   const input = document.querySelector('#siteSearch');
+  const clearBtn = document.querySelector('.search__clear');
 
-  if (clearBtn && input) {
-    clearBtn.addEventListener('click', () => {
-      input.value = '';
-      input.focus();
-    });
-  }
+  if (!input || !clearBtn) return;
+
+  input.addEventListener('input', () => {
+    clearBtn.style.display = input.value.trim() !== '' ? 'inline-block' : 'none';
+  });
+
+  clearBtn.addEventListener('click', () => {
+    input.value = '';
+    input.focus();
+    clearBtn.style.display = 'none';
+  });
 });
 //#endregion
 
