@@ -176,6 +176,7 @@ fieldset {
   height: 3.5rem;
   justify-content: center;
   width: 2.25rem;
+  align-items: center;
 }
 
 .header__mobile-button--menu {
