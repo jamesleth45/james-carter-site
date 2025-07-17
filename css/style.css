@@ -204,6 +204,12 @@ fieldset {
   margin-top: 3.5rem;
 }
 
+@media (min-width: 80rem) {
+  .hero {
+    margin-top: 0;
+  }
+}
+
 .hero__grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
