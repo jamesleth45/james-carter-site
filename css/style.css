@@ -436,7 +436,15 @@ select:focus {
 /* #endregion */
 
 /* #region Search */
+.search {
+  position: relative;
+}
 
+.search__clear {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 /* #endregion */
 
 /* #region Hero */
