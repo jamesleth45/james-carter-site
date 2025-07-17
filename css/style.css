@@ -294,6 +294,7 @@ fieldset {
   top: 0;
   width: 2.25rem;
   z-index: 110;
+  margin-right: 0.625rem;
 }
 
 @media (min-width: 80rem) {
