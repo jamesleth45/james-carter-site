@@ -82,10 +82,18 @@ document.addEventListener("DOMContentLoaded", () => {
 //#region Header
 document.addEventListener("DOMContentLoaded", function () {
   const links = document.querySelectorAll(".header__link");
-  const currentPath = window.location.pathname.replace(/\/$/, ""); // remove trailing slash
+  const currentPath = window.location.pathname.replace(/\/$/, "");
 
   links.forEach(link => {
-    const linkPath = new URL(link.href).pathname.replace(/\/$/, ""); // same, remove trailing slash
+    const href = link.getAttribute("href");
+
+    // Skip if it's empty, just a hash, or a full external link
+    if (!href || href === "#" || href.startsWith("http") && !href.includes(location.hostname)) {
+      return;
+    }
+
+    // Parse pathname safely
+    const linkPath = new URL(href, location.origin).pathname.replace(/\/$/, "");
 
     if (linkPath === currentPath) {
       link.classList.add("header__link--selected");
