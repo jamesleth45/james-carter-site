@@ -106,54 +106,44 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //#endregion
 
-//#region Panel
-document.addEventListener('click', (e) => {
-  const openBtn = e.target.closest('[data-target]');
-  const closeBtn = e.target.closest('.panel__close');
+// #region panel open
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('[data-target]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const targetId = btn.getAttribute('data-target');
+      const panel = document.getElementById(targetId);
+      if (!panel) return;
 
-  // OPEN
-  if (openBtn) {
-    const targetId = openBtn.getAttribute('data-target');
-    const panel = document.getElementById(targetId);
-    if (panel) {
       panel.setAttribute('data-state', 'open');
-    }
-  }
+    });
+  });
+});
+// #endregion
 
-  // CLOSE via button
-  if (closeBtn) {
-    const panel = closeBtn.closest('.panel');
-    if (panel) closePanel(panel);
-  }
+// #region Panel close
+document.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener('click', (e) => {
+    const panel = e.target.closest('.panel');
+    if (!panel) return;
 
-  // CLOSE via outside click
-  document.querySelectorAll('.panel[data-state="open"]').forEach((panel) => {
     const inner = panel.querySelector('.panel__inner');
-    if (inner && !inner.contains(e.target) && !e.target.closest('[data-target]')) {
-      closePanel(panel);
+    const isCloseBtn = e.target.matches('.panel__close');
+    const clickedOutsideInner = !inner.contains(e.target);
+
+    if (isCloseBtn || clickedOutsideInner) {
+      panel.setAttribute('data-state', 'closed');
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.panel[data-state="open"]').forEach((panel) => {
+        panel.setAttribute('data-state', 'closed');
+      });
     }
   });
 });
-
-// ESC key close
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') {
-    document.querySelectorAll('.panel[data-state="open"]').forEach((panel) => {
-      closePanel(panel);
-    });
-  }
-});
-
-// Only data-state logic
-function closePanel(panel) {
-  panel.setAttribute('data-state', 'closing');
-
-  // Wait for the CSS transition to finish before hiding
-  setTimeout(() => {
-    panel.setAttribute('data-state', 'closed');
-  }, 500); // match transition duration in CSS
-}
-//#endregion
+// #endregion
 
 //#region Form
 
