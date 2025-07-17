@@ -250,19 +250,19 @@ fieldset {
 }
 
 .footer__button {
-  display: inline-flex;
   align-items: center;
+  display: inline-flex;
   gap: 0.625rem;
+  line-height: 1.5625rem;
 }
 
-.footer__link,
-.footer__button {
+.footer__link {
   line-height: 1.5625rem;
 }
 
 @media (min-width: 80rem) {
-  .footer__link,
-  .footer__button {
+  .footer__button,
+  .footer__link {
     line-height: inherit;
   }
 }
