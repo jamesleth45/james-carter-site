@@ -273,7 +273,7 @@ fieldset {
 .panel {
   position: fixed;
   inset: 0;
-  z-index: 110;
+  z-index: 100;
 }
 
 .panel__grid {
