@@ -203,6 +203,14 @@ fieldset {
 .footer__list {
   grid-column: span 2;
 }
+
+.footer__list:first-child {
+  margin-left: 1.6875rem;
+}
+
+.footer__list:last-child {
+  margin-left: 1.6875rem;
+}
 /* #endregion */
 
 /* #region Panel */
