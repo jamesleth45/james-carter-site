@@ -83,6 +83,8 @@ fieldset {
   left: 0;
   padding: 1.25rem;
   z-index: 101;
+  font-family: "neue-haas-grotesk-display", "neue-haas-grotesk-display fallback", sans-serif;
+  font-weight: 700;
 }
 
 @media (min-width: 80rem) {
