@@ -172,11 +172,11 @@ fieldset {
 }
 
 .header__mobile-button {
+  align-items: center;
   display: flex;
   height: 3.5rem;
   justify-content: center;
   width: 2.25rem;
-  align-items: center;
 }
 
 .header__mobile-button--menu {
@@ -213,8 +213,8 @@ fieldset {
 
 .hero__grid {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
   gap: 0;
+  grid-template-columns: repeat(12, 1fr);
   width: 100%;
 }
 
