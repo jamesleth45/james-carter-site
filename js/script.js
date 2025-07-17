@@ -56,9 +56,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const embeds = document.querySelectorAll(".w-embed");
 
   embeds.forEach(embed => {
-    const header = embed.querySelector("header");
-    if (header) {
-      embed.replaceWith(header);
+    const inner = embed.firstElementChild;
+    if (inner) {
+      embed.replaceWith(inner);
     }
   });
 });
