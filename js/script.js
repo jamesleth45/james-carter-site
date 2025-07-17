@@ -176,13 +176,17 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!input || !clearBtn) return;
 
   input.addEventListener('input', () => {
-    clearBtn.style.display = input.value.trim() !== '' ? 'inline-block' : 'none';
+    if (input.value.trim() !== '') {
+      clearBtn.removeAttribute('hidden');
+    } else {
+      clearBtn.setAttribute('hidden', '');
+    }
   });
 
   clearBtn.addEventListener('click', () => {
     input.value = '';
     input.focus();
-    clearBtn.style.display = 'none';
+    clearBtn.setAttribute('hidden', '');
   });
 });
 //#endregion
