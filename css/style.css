@@ -124,17 +124,18 @@ fieldset {
   }
 }
 
-.header__list--left {
-  left: 1.6875rem;
+.header__list {
   position: fixed;
   top: 8.75rem;
 }
 
+.header__list--left {
+  left: 1.6875rem;
+}
+
 .header__list--right {
-  position: fixed;
   right: 1.6875rem;
   text-align: right;
-  top: 8.75rem;
 }
 
 .header__item--preview,
@@ -150,7 +151,7 @@ fieldset {
 
 .header__mobile {
   backdrop-filter: blur(10px);
-  background-color: rgb(255,255,255,0.9);
+  background-color: rgba(255, 255, 255, 0.9);
   display: flex;
   height: 3.5rem;
   justify-content: flex-end;
@@ -167,11 +168,11 @@ fieldset {
 }
 
 .header__mobile-button {
-  width: 2.25rem;
-  height: 3.5rem;
-  display: flex;
   align-items: center;
+  display: flex;
+  height: 3.5rem;
   justify-content: center;
+  width: 2.25rem;
 }
 
 .header__mobile-button--menu {
