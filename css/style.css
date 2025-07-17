@@ -255,4 +255,10 @@ fieldset {
     grid-column: 5 / 9;
   }
 }
+
+.footer__button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+}
 /* #endregion */
