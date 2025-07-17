@@ -100,7 +100,7 @@ textarea {
   border-bottom: 1px solid #000;
   color: inherit;
   font: inherit;
-  padding: 0 0 0.3125rem;
+  padding-bottom: 0.3125rem;
   width: 100%;
 }
 
