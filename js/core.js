@@ -1,35 +1,29 @@
 window.addEventListener("load", function () {
-  // 1. Remove data-wf-* attributes from <html>
   const html = document.documentElement;
   html.removeAttribute("data-wf-domain");
   html.removeAttribute("data-wf-page");
   html.removeAttribute("data-wf-site");
-
-  // 2. Remove Webflow-specific class
   html.classList.remove("w-mod-js");
+  html.setAttribute("lang", "en");
+  html.setAttribute("dir", "ltr");
 
-  // 3. Remove Webflow stylesheet
   document.querySelectorAll("link[rel='stylesheet']").forEach((link) => {
     if (link.href.includes("webflow.shared")) link.remove();
   });
 
-  // 4. Remove Webflow + jQuery scripts
   document.querySelectorAll("script[src]").forEach((script) => {
     const src = script.src;
     if (src.includes("jquery") || src.includes("webflow.")) script.remove();
   });
 
-  // 5. Remove empty <script> tags
   document.querySelectorAll("script").forEach((script) => {
     if (!script.src && script.textContent.trim() === "") script.remove();
   });
 
-  // 6. Remove Webflow-injected <style> tag
   document.querySelectorAll("style").forEach((style) => {
     if (style.textContent.includes(".wf-force-outline-none")) style.remove();
   });
 
-  // 7. Remove Webflow-generated comments
   const commentNodeIterator = document.createNodeIterator(
     document,
     NodeFilter.SHOW_COMMENT,
@@ -42,6 +36,7 @@ window.addEventListener("load", function () {
         : NodeFilter.FILTER_REJECT,
     }
   );
+
   let currentNode;
   while ((currentNode = commentNodeIterator.nextNode())) {
     currentNode.parentNode.removeChild(currentNode);
