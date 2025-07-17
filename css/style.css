@@ -212,6 +212,12 @@ fieldset {
 .footer__list:last-child {
   margin-left: 1.6875rem;
 }
+
+.footer__button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+}
 /* #endregion */
 
 /* #region Panel */
@@ -254,11 +260,5 @@ fieldset {
   .hero__link {
     grid-column: 5 / 9;
   }
-}
-
-.footer__button {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.625rem;
 }
 /* #endregion */
