@@ -323,6 +323,12 @@ fieldset {
 }
 
 @media (min-width: 80rem) {
+  .panel__text {
+    display: block;
+  }
+}
+
+@media (min-width: 80rem) {
   .panel__icon {
     display: none;
   }
