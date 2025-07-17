@@ -54,6 +54,10 @@ document.addEventListener("DOMContentLoaded", () => {
       embed.replaceWith(inner);
     }
   });
+
+  document.querySelectorAll(".w--current").forEach(el => {
+    el.classList.remove("w--current");
+  });
 });
 //#endregion
 
