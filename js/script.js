@@ -46,12 +46,6 @@ window.addEventListener("load", function () {
   }
 });
 
-
-function openMenu() {
-  const menu = document.getElementById("navMenu");
-  menu.classList.toggle("show");
-}
-
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".w-embed").forEach(embed => {
     const inner = embed.firstElementChild;
