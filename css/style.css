@@ -20,6 +20,9 @@ body {
   font-size: .75rem;
   letter-spacing: .03em;
   line-height: .9375rem;
+  text-transform: uppercase;
+  background-color: #fff;
+  color: #000;
 }
 
 @media (min-width: 48rem) {
