@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const btn = document.createElement("button");
-  btn.textContent = "Click Me!";
-  btn.onclick = () => {
-    alert("If you're seeing this, your JS is working. 💥");
-  };
-  document.body.appendChild(btn);
+  const div = document.createElement("div");
+  div.className = "test-message";
+  div.textContent = "✅ External JS Loaded via cdn.jamescarter.eu";
+  document.body.appendChild(div);
 });
