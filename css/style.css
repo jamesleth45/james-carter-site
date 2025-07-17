@@ -10,7 +10,7 @@
 html,
 body {
   height: 100%;
-  font-family: var(--font-base);
+  font-family: neue-haas-grotesk-text", "neue-haas-grotesk-text fallback", sans-serif;
   color: var(--color-text);
   background-color: var(--color-bg);
   -webkit-font-smoothing: antialiased;
