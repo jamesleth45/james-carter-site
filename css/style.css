@@ -211,8 +211,8 @@ h1, h2, h3, h4, h5, h6 {
   text-align: right;
 }
 
-.header__item--preview,
-.header__item--brand {
+.header__item--space,
+.header__item--break {
   margin-top: 0.8125rem;
 }
 
@@ -474,11 +474,11 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
 }
 
-.nav__item--preview {
+.nav__item--space {
   margin-top: 1.25rem;
 }
 
-.nav__item--brand {
+.nav__item--break {
   margin-top: 1.875rem;
 }
 
