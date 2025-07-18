@@ -663,6 +663,16 @@ h1, h2, h3, h4, h5, h6 {
 /* #endregion */
 
 /* #region Product listing */
+.product-listing {
+  margin-top: 3.5rem;
+}
+
+@media (min-width: 80rem) {
+  .product-listing {
+    margin-top: 0;
+  }
+}
+
 .product-listing__grid {
   display: grid;
   gap: 0;
