@@ -491,13 +491,13 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   opacity: 0;
   pointer-events: none;
-}
+} .5625rem
 
 /* Actual visual checkbox */
 .newsletter__checkbox-box {
-  width: 0.5rem;
-  height: 0.5rem;
   background-color: transparent;
+  height: 0.5rem;
+  width: 0.5rem;
   box-shadow: 
     0 0 0 0.0625rem inset,
     0 0 0 0.125rem #fff inset;
@@ -510,6 +510,15 @@ h1, h2, h3, h4, h5, h6 {
 /* Fill it black when checked */
 .newsletter__checkbox-input:checked ~ .newsletter__checkbox-box {
   background-color: #000;
+}
+
+
+@media (min-width: 48rem) {
+  .newsletter__checkbox-box {
+    height: .5625rem;
+    width: .5625rem;
+    top: .1875rem;
+  }
 }
 
 /* #endregion */
