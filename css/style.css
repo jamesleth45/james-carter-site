@@ -671,7 +671,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (min-width: 80rem) {
-  .product-listing__item {
+  .product-listing__items {
     grid-column: 3 / 11;
   }
 }
