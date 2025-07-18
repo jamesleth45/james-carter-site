@@ -165,29 +165,36 @@ document.addEventListener('DOMContentLoaded', () => {
 // #endregion
 
 //#region Form
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/mblklkpa";
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('newsletterForm');
+  const done = document.querySelector('.form__done');
 
-form.addEventListener('submit', async (e) => {
-  e.preventDefault();
+  if (!form || !done) return;
 
-  const formData = new FormData(form);
+  const FORMSPREE_ENDPOINT = "https://formspree.io/f/mblklkpa";
 
-  try {
-    const res = await fetch(FORMSPREE_ENDPOINT, {
-      method: "POST",
-      headers: { Accept: "application/json" },
-      body: formData
-    });
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
 
-    if (res.ok) {
-      form.hidden = true;
-      done.removeAttribute("hidden");
-    } else {
+    const formData = new FormData(form);
+
+    try {
+      const res = await fetch(FORMSPREE_ENDPOINT, {
+        method: "POST",
+        headers: { Accept: "application/json" },
+        body: formData
+      });
+
+      if (res.ok) {
+        form.hidden = true;
+        done.removeAttribute("hidden");
+      } else {
+        alert("Something went wrong. Please try again.");
+      }
+    } catch (err) {
       alert("Something went wrong. Please try again.");
     }
-  } catch (err) {
-    alert("Something went wrong. Please try again.");
-  }
+  });
 });
 //#endregion
 
