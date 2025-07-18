@@ -741,6 +741,12 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 1.25rem;
 }
 
+@media (min-width: 80rem) {
+  .product-listing__meta {
+    padding-left: 0;
+  }
+}
+
 .product-listing__title {
   margin-top: 0.625rem;
   font-weight: 400;
