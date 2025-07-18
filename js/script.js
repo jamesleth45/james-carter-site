@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // #endregion
 
 //#region Form
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/mblklkpa";
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/mblklkpa"
 
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
