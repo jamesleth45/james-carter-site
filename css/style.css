@@ -252,7 +252,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 2.25rem;
 }
 
-.header__mobile-button--menu {
+.header__mobile-button:last-child {
   margin-right: 0.625rem;
 }
 /* #endregion */
