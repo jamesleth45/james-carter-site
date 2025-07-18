@@ -466,6 +466,15 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4.375rem;
+  height: 100%;
+}
+
+
 
 /* #region Form */
 .newsletter__form,
