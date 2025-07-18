@@ -438,7 +438,8 @@ h1, h2, h3, h4, h5, h6 {
 /* #endregion */
 
 /* #region Form */
-.form {
+.newsletter__form,
+.newsletter__done {
   margin-top: 1.875rem;
 }
 /* #endregion */
