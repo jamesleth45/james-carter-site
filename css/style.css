@@ -477,22 +477,22 @@ h1, h2, h3, h4, h5, h6 {
 
 .newsletter__checkbox {
   position: relative;
-  display: flex;
-  align-items: flex-start;
-  gap: 0.75rem;
+  display: block;
   font-size: 0.875rem;
   line-height: 1.5;
   cursor: pointer;
+  padding-left: 1rem;
 }
 
+/* Hide native checkbox */
 .newsletter__checkbox input[type="checkbox"] {
   position: absolute;
   opacity: 0;
   pointer-events: none;
 }
 
-/* Draw custom box */
-.newsletter__box-text::before {
+/* Custom box */
+.newsletter__checkbox::before {
   content: "";
   position: absolute;
   top: 0.125rem;
@@ -500,14 +500,13 @@ h1, h2, h3, h4, h5, h6 {
   width: 0.5rem;
   height: 0.5rem;
   background-color: transparent;
-  box-shadow:
+  box-shadow: 
     0 0 0 0.0625rem inset,
     0 0 0 0.125rem #fff inset;
-  transition: background-color 0.2s ease;
 }
 
 /* Checked state */
-.newsletter__checkbox input[type="checkbox"]:checked + .newsletter__box-text::before {
+.newsletter__checkbox input[type="checkbox"]:checked + *::before {
   background-color: #000;
 }
 /* #endregion */
