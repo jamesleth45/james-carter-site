@@ -670,6 +670,11 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 
+.product-listing__items {
+  display: flex;
+  gap: 0.625rem;
+}
+
 @media (min-width: 80rem) {
   .product-listing__items {
     grid-column: 3 / 11;
