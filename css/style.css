@@ -457,6 +457,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* #region Nav */
 .nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4.375rem;
   height: 100%;
 }
 
@@ -464,14 +468,6 @@ h1, h2, h3, h4, h5, h6 {
   #panelNav {
     display: none;
   }
-}
-
-.nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 4.375rem;
-  height: 100%;
 }
 
 
