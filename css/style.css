@@ -453,7 +453,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .newsletter__submit {
-  margin-top: 1.25rem;
+  height: 2.75rem;
+  width: 100%;
+  border: 1px solid #000;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.newsletter__submit {
+  margin-top: 0.625rem;
 }
 
 .newsletter__privacy {
