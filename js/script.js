@@ -165,7 +165,31 @@ document.addEventListener('DOMContentLoaded', () => {
 // #endregion
 
 //#region Form
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('newsletterForm');
+  const done = document.querySelector('.form__done');
 
+  if (!form) return;
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    const res = await fetch('https://formspree.io/f/xpwlzqvw', {
+      method: 'POST',
+      headers: { Accept: 'application/json' },
+      body: formData,
+    });
+
+    if (res.ok) {
+      form.hidden = true;
+      done.hidden = false;
+    } else {
+      alert('Something went wrong. Please try again later.');
+    }
+  });
+});
 //#endregion
 
 // #region Search input logic
