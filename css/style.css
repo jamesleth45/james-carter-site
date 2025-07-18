@@ -104,6 +104,12 @@ textarea {
   width: 100%;
 }
 
+input[type="email"],
+input[type="password"],
+textarea {
+  text-transform: none;
+}
+
 input::placeholder,
 textarea::placeholder {
   color: #999;
