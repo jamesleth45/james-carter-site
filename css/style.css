@@ -650,7 +650,7 @@ img {
   width: 100%;
 }
 
-@media (min-width: 80rem) {
+@media (min-width: 80rem {
   .hero__link {
     grid-column: 5 / 9;
   }
