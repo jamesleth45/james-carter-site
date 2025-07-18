@@ -497,6 +497,7 @@ h1, h2, h3, h4, h5, h6 {
 .newsletter__checkbox-box {
   width: 0.5rem;
   height: 0.5rem;
+  display: inline-block;
   background-color: transparent;
   box-shadow: 
     0 0 0 0.0625rem inset,
