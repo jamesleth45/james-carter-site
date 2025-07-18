@@ -478,6 +478,13 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 1.875rem;
 }
 
+@media (min-width: 80rem) {
+  .nav__button,
+  .nav__link {
+    line-height: inherit;
+  }
+}
+/* #endregion */
 
 
 /* #region Form */
