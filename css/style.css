@@ -455,6 +455,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* #endregion */
 
+/* #region Nav */
+.nav {
+  width: 100%;
+}
+
+@media (min-width: 80rem) {
+  .nav {
+    display: none;
+  }
+}
+
 /* #region Form */
 .newsletter__form,
 .newsletter__done {
