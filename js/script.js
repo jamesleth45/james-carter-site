@@ -102,10 +102,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 //#endregion
 
-//#region Footer
-
-//#endregion
-
 // #region Panel open
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('[data-target]').forEach((btn) => {
@@ -240,7 +236,3 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 // #endregion
-
-//#region Hero
-
-//#endregion
