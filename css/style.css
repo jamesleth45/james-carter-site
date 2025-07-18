@@ -684,13 +684,14 @@ h1, h2, h3, h4, h5, h6 {
 .product-listing__items {
   display: flex;
   flex-direction: column;
-  gap: 0.625rem;
+  gap: 1.25rem;
   grid-column: 1 / -1;
 }
 
 @media (min-width: 48rem) {
   .product-listing__items {
     flex-direction: row;
+    gap: 0.625rem;
   }
 }
 
