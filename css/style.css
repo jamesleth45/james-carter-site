@@ -670,6 +670,12 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 
+@media (min-width: 80rem) {
+  .product-listing__item {
+    grid-column: 3 / 11;
+  }
+}
+
 .product-listing__image-wrapper {
   position: relative;
   overflow: hidden;
