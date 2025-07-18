@@ -751,4 +751,8 @@ h1, h2, h3, h4, h5, h6 {
 .product-listing__price {
   font-weight: 700;
 }
+
+.product-listing__tag {
+  font-weight: 400;
+}
 /* #endregion */
