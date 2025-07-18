@@ -663,7 +663,12 @@ h1, h2, h3, h4, h5, h6 {
 /* #endregion */
 
 
-
+.product-listing__grid {
+  display: grid;
+  gap: 0;
+  grid-template-columns: repeat(12, 1fr);
+  width: 100%;
+}
 
 .product-listing__image-wrapper {
   position: relative;
