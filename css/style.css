@@ -503,6 +503,8 @@ h1, h2, h3, h4, h5, h6 {
     0 0 0 0.125rem #fff inset;
   display: block;
   flex-shrink: 0;
+  position: relative;
+  top: .125rem;
 }
 
 /* Fill it black when checked */
