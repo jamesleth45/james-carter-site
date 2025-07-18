@@ -662,7 +662,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* #endregion */
 
-
+/* #region Product listing */
 .product-listing__grid {
   display: grid;
   gap: 0;
@@ -703,3 +703,4 @@ h1, h2, h3, h4, h5, h6 {
 .product-listing__link:hover .product-listing__image--primary {
   opacity: 0;
 }
+/* #endregion */
