@@ -477,8 +477,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .newsletter__checkbox {
   position: relative;
-  display: block;
-  padding-left: 2rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
   font-size: 0.875rem;
   line-height: 1.5;
   cursor: pointer;
@@ -490,21 +491,24 @@ h1, h2, h3, h4, h5, h6 {
   pointer-events: none;
 }
 
-/* Custom box */
-.newsletter__checkbox::before {
+/* Draw custom box */
+.newsletter__box-text::before {
   content: "";
   position: absolute;
+  top: 0.125rem;
   left: 0;
-  top: 0.25rem;
-  width: 1rem;
-  height: 1rem;
-  border: 1px solid #000;
-  background: #fff;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: transparent;
+  box-shadow:
+    0 0 0 0.0625rem inset,
+    0 0 0 0.125rem #fff inset;
+  transition: background-color 0.2s ease;
 }
 
 /* Checked state */
-.newsletter__checkbox input[type="checkbox"]:checked + *::before {
-  background: #000;
+.newsletter__checkbox input[type="checkbox"]:checked + .newsletter__box-text::before {
+  background-color: #000;
 }
 /* #endregion */
 
