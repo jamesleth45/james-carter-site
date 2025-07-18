@@ -456,6 +456,12 @@ h1, h2, h3, h4, h5, h6 {
 /* #endregion */
 
 /* #region Nav */
+@media (min-width: 80rem) {
+  #panelNav {
+    display: none;
+  }
+}
+
 .nav {
   display: flex;
   flex-direction: column;
@@ -464,10 +470,12 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
 }
 
-@media (min-width: 80rem) {
-  #panelNav {
-    display: none;
-  }
+.nav__item--preview {
+  margin-top: 1.25rem;
+}
+
+.nav__item--brand {
+  margin-top: 1.875rem;
 }
 
 
