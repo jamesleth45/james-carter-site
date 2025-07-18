@@ -479,38 +479,35 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .newsletter__checkbox {
-  cursor: pointer;
-  position: relative;
   display: flex;
   align-items: flex-start;
   gap: 0.625rem;
+  cursor: pointer;
+  position: relative;
 }
 
-
-.newsletter__checkbox input[type="checkbox"] {
+/* Hide the native checkbox */
+.newsletter__checkbox-input {
   position: absolute;
   opacity: 0;
   pointer-events: none;
 }
 
-/* Box */
-.newsletter__checkbox span::before {
-  content: "";
-  position: relative;
-  display: inline-block;
+/* Actual visual checkbox */
+.newsletter__checkbox-box {
   width: 0.5rem;
   height: 0.5rem;
   background-color: transparent;
   box-shadow: 
     0 0 0 0.0625rem inset,
     0 0 0 0.125rem #fff inset;
-  margin-top: 0.25rem;
 }
 
-/* Checked state */
-.newsletter__checkbox input[type="checkbox"]:checked + span::before {
+/* Fill it black when checked */
+.newsletter__checkbox-input:checked ~ .newsletter__checkbox-box {
   background-color: #000;
 }
+
 /* #endregion */
 
 /* #region Search */
