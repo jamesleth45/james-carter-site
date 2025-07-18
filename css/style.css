@@ -687,6 +687,12 @@ h1, h2, h3, h4, h5, h6 {
   grid-column: 1 / -1;
 }
 
+@media (min-width: 48rem) {
+  .product-listing__items {
+    display: flex;
+  }
+}
+
 @media (min-width: 80rem) {
   .product-listing__items {
     grid-column: 4 / 10;
