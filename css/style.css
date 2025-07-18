@@ -497,11 +497,12 @@ h1, h2, h3, h4, h5, h6 {
 .newsletter__checkbox-box {
   width: 0.5rem;
   height: 0.5rem;
-  display: inline-block;
   background-color: transparent;
   box-shadow: 
     0 0 0 0.0625rem inset,
     0 0 0 0.125rem #fff inset;
+  display: block;
+  flex-shrink: 0;
 }
 
 /* Fill it black when checked */
