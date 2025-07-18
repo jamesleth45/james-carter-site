@@ -458,6 +458,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 1.25rem;
 }
 
+.newsletter__submit:hover {
+  background-color: #222;
+  font-weight: 400;
+}
+
 .newsletter__submit {
   margin-top: 0.625rem;
 }
