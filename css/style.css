@@ -461,7 +461,7 @@ select:focus {
 
 .hero__link {
   display: block;
-  grid-column: 1 / -1;
+  grid-column: 1 / -11;
   width: 100%;
 }
 
