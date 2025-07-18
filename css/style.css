@@ -470,6 +470,10 @@ h1, h2, h3, h4, h5, h6 {
 .newsletter__privacy {
   margin-top: 0.625rem;
 }
+
+.newsletter__link {
+  text-decoration: underline;
+}
 /* #endregion */
 
 /* #region Search */
