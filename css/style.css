@@ -481,13 +481,8 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .newsletter__checkbox {
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  font-size: 0.875rem;
-  line-height: 1.5;
+  padding-left: ;
   cursor: pointer;
-  gap: 0.75rem;
 }
 
 .newsletter__checkbox input[type="checkbox"] {
