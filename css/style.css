@@ -661,3 +661,40 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 /* #endregion */
+
+
+
+
+.product-listing__image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-listing__image {
+  width: 100%;
+  display: block;
+  height: auto;
+  transition: opacity 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.product-listing__image--primary {
+  position: relative; /* sits above secondary */
+  z-index: 2;
+  opacity: 1;
+}
+
+.product-listing__image--secondary {
+  z-index: 1;
+  opacity: 0;
+}
+
+.product-listing__link:hover .product-listing__image--secondary {
+  opacity: 1;
+}
+
+.product-listing__link:hover .product-listing__image--primary {
+  opacity: 0;
+}
