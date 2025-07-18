@@ -173,6 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
+    console.log('Form submitted'); // ✅ Add this
 
     const formData = new FormData(form);
 
