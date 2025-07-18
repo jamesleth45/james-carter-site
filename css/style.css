@@ -467,7 +467,7 @@ select:focus {
 
 @media (min-width: 80rem) {
   .hero__link {
-    grid-column: 5 / 13;
+    grid-column: 5 / 9;
   }
 }
 
