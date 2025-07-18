@@ -739,11 +739,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .product-listing__title {
   margin-top: 0.625rem;
+  font-weight: 400;
 }
 
 .product-listing__info {
   display: flex;
   flex-direction: column;
   margin-top: 0.4375rem;
+}
+
+.product-listing__price {
+  font-weight: 700;
 }
 /* #endregion */
