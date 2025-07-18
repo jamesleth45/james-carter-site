@@ -504,7 +504,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   flex-shrink: 0;
   position: relative;
-  top: .1875rem;
+  top: 0.1875rem;
 }
 
 /* Fill it black when checked */
@@ -517,7 +517,7 @@ h1, h2, h3, h4, h5, h6 {
   .newsletter__checkbox-box {
     height: 0.5rem;
     width: 0.5rem;
-    top: .125rem;
+    top: 0.125rem;
   }
 }
 
