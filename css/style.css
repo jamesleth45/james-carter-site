@@ -444,6 +444,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .newsletter__checkbox {
+  display: block;
   margin-top: 1.25rem;
 }
 
