@@ -481,7 +481,7 @@ select:focus {
 
 @media (min-width: 80rem) {
   .hero__image {
-    padding-top: ;
+    padding-top: 0;
   }
 }
 /* #endregion */
