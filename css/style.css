@@ -727,11 +727,13 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0;
 }
 
-.product-listing__link:hover .product-listing__image--secondary {
-  opacity: 1;
-}
+@media (hover: hover) {
+  .product-listing__link:hover .product-listing__image--secondary {
+    opacity: 1;
+  }
 
-.product-listing__link:hover .product-listing__image--primary {
-  opacity: 0;
+  .product-listing__link:hover .product-listing__image--primary {
+    opacity: 0;
+  }
 }
 /* #endregion */
