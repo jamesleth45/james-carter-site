@@ -283,7 +283,7 @@ select:focus {
 }
 
 @media (min-width: 80rem) {
-  .footer__list-form {
+  .footer__list-newsletter {
     margin-right: 1.6875rem;
   }
 }
