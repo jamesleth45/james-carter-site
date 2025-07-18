@@ -448,10 +448,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 1.25rem;
 }
 
-.newsletter__note {
-  margin-top: 1.25rem;
-}
-
 .newsletter__submit {
   height: 2.75rem;
   width: 100%;
@@ -459,6 +455,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #000;
   color: #fff;
   text-align: center;
+  margin-top: 1.25rem;
 }
 
 .newsletter__submit {
