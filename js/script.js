@@ -165,7 +165,35 @@ document.addEventListener('DOMContentLoaded', () => {
 // #endregion
 
 //#region Form
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('newsletterForm');
+  const done = document.querySelector('.form__done');
 
+  if (!form || !done) return;
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    try {
+      const res = await fetch(form.action, {
+        method: form.method,
+        headers: { Accept: 'application/json' },
+        body: formData
+      });
+
+      if (res.ok) {
+        form.hidden = true;
+        done.removeAttribute('hidden');
+      } else {
+        alert('Something went wrong. Please try again.');
+      }
+    } catch (err) {
+      alert('Something went wrong. Please try again.');
+    }
+  });
+});
 //#endregion
 
 // #region Search input logic
