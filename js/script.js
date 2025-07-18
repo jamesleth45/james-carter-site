@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
 //#region Form
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('newsletterForm');
-  const done = document.querySelector('.form__done');
+  const done = document.querySelector('.newsletter__done');
 
   if (!form || !done) return;
 
