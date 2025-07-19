@@ -674,7 +674,7 @@ img {
 /* #region Product listing */
 .product-listing {
   margin-top: 3.5rem;
-  padding-bottom: 6.25rem;
+  padding-bottom: 6.25rem
 }
 
 @media (min-width: 80rem) {
