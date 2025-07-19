@@ -767,10 +767,12 @@ img {
 
 .listing__carousel {
   width: 100%;
+  display: block;
 }
 
 .listing__carousel-cell {
   width: 100%;
+  display: block;
 }
 
 .listing__carousel-cell img {
