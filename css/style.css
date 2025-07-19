@@ -778,4 +778,9 @@ img {
   display: block;
 }
 
+.listing__carousel * {
+  outline: none;
+}
+
+
 /* #endregion */
