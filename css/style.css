@@ -642,7 +642,7 @@ img {
   gap: 0;
   grid-template-columns: repeat(12, 1fr);
   width: 100%;
-}
+
 
 .hero__link {
   display: block;
