@@ -683,7 +683,7 @@ img {
   }
 }
 
-.product-listing__grid {
+.product-listing__grid 
   display: grid;
   gap: 0;
   grid-template-columns: repeat(12, 1fr);
