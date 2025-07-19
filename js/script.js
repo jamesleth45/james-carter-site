@@ -244,7 +244,7 @@ document.addEventListener('DOMContentLoaded', () => {
 window.addEventListener('load', () => {
   const carousels = document.querySelectorAll('.js-carousel');
   carousels.forEach((carousel) => {
-    new Flickity(carousel, {
+    const flkty = new Flickity(carousel, {
       cellAlign: 'left',
       contain: true,
       lazyLoad: true,
@@ -253,5 +253,10 @@ window.addEventListener('load', () => {
       pageDots: false,
       dragThreshold: 5,
     });
+
+    // Force layout after a tick
+    setTimeout(() => {
+      flkty.resize();
+    }, 100);
   });
 });
