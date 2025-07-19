@@ -800,6 +800,20 @@ html, body {
   user-select: none;
 }
 
+.listing__carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.listing__carousel-cell {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.listing__item {
+  min-width: 0;
+}
 
 
 
