@@ -649,7 +649,6 @@ img {
   grid-column: 1 / -1;
   width: 100%;
 }
-
 @media (min-width: 80rem) {
   .hero__link {
     grid-column: 5 / 9;
