@@ -764,4 +764,19 @@ img {
 .listing__tag {
   font-weight: 400;
 }
+
+.listing__carousel {
+  width: 100%;
+}
+
+.listing__carousel-cell {
+  width: 100%;
+  margin-right: 0.625rem;
+}
+
+.listing__carousel-cell img {
+  width: 100%;
+  display: block;
+}
+
 /* #endregion */
