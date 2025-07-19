@@ -778,9 +778,16 @@ img {
   display: block;
 }
 
+html,
+body {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .listing__carousel * {
   outline: none;
+  user-select: none;
 }
+
 
 
 /* #endregion */
