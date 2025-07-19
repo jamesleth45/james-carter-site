@@ -1,5 +1,3 @@
-
-
 //#region Header
 document.addEventListener("DOMContentLoaded", function () {
   const links = document.querySelectorAll(".header__link");
@@ -157,28 +155,3 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 // #endregion
-
-
-
-
-
-
-window.addEventListener('load', () => {
-  const carousels = document.querySelectorAll('.js-carousel');
-  carousels.forEach((carousel) => {
-    const flkty = new Flickity(carousel, {
-      cellAlign: 'left',
-      contain: true,
-      lazyLoad: true,
-      wrapAround: true,
-      prevNextButtons: false,
-      pageDots: false,
-      dragThreshold: 5,
-    });
-
-    // Force layout after a tick
-    setTimeout(() => {
-      flkty.resize();
-    }, 100);
-  });
-});
