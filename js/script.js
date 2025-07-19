@@ -236,3 +236,22 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 // #endregion
+
+
+
+
+
+window.addEventListener('load', () => {
+  const carousels = document.querySelectorAll('.js-carousel');
+  carousels.forEach((carousel) => {
+    new Flickity(carousel, {
+      cellAlign: 'left',
+      contain: true,
+      lazyLoad: true,
+      wrapAround: true,
+      prevNextButtons: false,
+      pageDots: false,
+      dragThreshold: 5,
+    });
+  });
+});
