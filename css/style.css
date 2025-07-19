@@ -778,15 +778,26 @@ img {
   display: block;
 }
 
-html,
-body {
+html, body {
   -webkit-tap-highlight-color: transparent;
 }
 
-.listing__carousel * {
+.listing__link,
+.listing__link:focus,
+.listing__link:active,
+.listing__link:focus-visible {
   outline: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-focus-ring-color: transparent;
+  tap-highlight-color: transparent;
+}
+
+.listing__carousel-cell img {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
   user-select: none;
 }
+
 
 
 
