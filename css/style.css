@@ -291,7 +291,7 @@ img {
 .footer__grid {
   display: grid;
   gap: 0;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(12, 1fr);
   width: 100%;
 }
 
