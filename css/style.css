@@ -705,14 +705,14 @@ img {
   line-height: 1;
 }
 
-.hero__text {
-  text-decoration: underline;
-}
-
 @media (min-width: 80rem) {
   .hero__heading {
     font-size: 1.375rem;
   }
+}
+
+.hero__text {
+  text-decoration: underline;
 }
 /* #endregion */
 
