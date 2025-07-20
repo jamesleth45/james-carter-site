@@ -693,6 +693,13 @@ img {
   width: 100%;
 }
 
+.listing__header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  grid-column: 1 / -1;
+}
+
 .listing__items {
   display: flex;
   flex-direction: column;
