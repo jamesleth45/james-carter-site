@@ -213,7 +213,7 @@ img {
 
 @media (min-width: 80rem) {
   .header__nav {
-    display: blok;
+    display: block;
   }
 }
 
