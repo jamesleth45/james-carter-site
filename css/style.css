@@ -784,3 +784,7 @@ img {
 * {
   scrollbar-color: #000 auto;
 }
+
+::-webkit-scrollbar {
+  width: 12px;
+}
