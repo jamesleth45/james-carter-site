@@ -706,6 +706,12 @@ img {
   }
 }
 
+@media (min-width: 80rem) {
+  .listing__description {
+    margin: 1.25rem 0 5rem;
+  }
+}
+
 .listing__items {
   display: flex;
   flex-direction: column;
