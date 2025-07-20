@@ -437,7 +437,7 @@ img {
 }
 
 .panel__inner {
-  background-color: rgb(255,255,255,0.9)
+  background-color: rgb(255, 255, 255, 0.9);
   display: block;
   grid-column: 1 / -1;
   overflow-y: auto;
