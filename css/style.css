@@ -825,6 +825,6 @@ img {
   margin: 0;
 }
 
-.breadcrumb__item:last-of-type .breadcrumb__item {
+.breadcrumb__item:last-of-type {
   font-weight: 700;
 }
