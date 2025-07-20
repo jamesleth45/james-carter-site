@@ -774,8 +774,3 @@ img {
   font-weight: 400;
 }
 /* #endregion */
-
-html,
-body {
-  overflow-x: hidden;
-}
