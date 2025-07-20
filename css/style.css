@@ -24,6 +24,7 @@ body {
   letter-spacing: 0.03em;
   line-height: 0.9375rem;
   text-transform: uppercase;
+  overflow-x: hidden;
 }
 
 @media (min-width: 48rem) {
