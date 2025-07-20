@@ -698,7 +698,10 @@ img {
 }
 
 .hero__heading {
-  font-size: 2rem;
+  font-size: 1.375rem;
+  -webkit-font-smoothing: antialiased;
+  font-family: "neue-haas-grotesk-display", "neue-haas-grotesk-display fallback",
+    sans-serif;
 }
 /* #endregion */
 
