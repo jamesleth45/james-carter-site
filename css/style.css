@@ -702,6 +702,7 @@ img {
   -webkit-font-smoothing: antialiased;
   font-family: "neue-haas-grotesk-display", "neue-haas-grotesk-display fallback",
     sans-serif;
+  line-height: 1;
 }
 /* #endregion */
 
