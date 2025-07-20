@@ -775,12 +775,6 @@ img {
 }
 /* #endregion */
 
-/* Chrome, Safari, Edge */
-::-webkit-scrollbar-thumb {
-  background-color: #000;
-}
-
-/* Firefox */
-* {
-  scrollbar-color: #000 auto;
+html.s-scrolling {
+  scrollbar-color: #000 rgba(0, 0, 0, 0);
 }
