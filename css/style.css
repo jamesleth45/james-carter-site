@@ -643,8 +643,10 @@ img {
 /* #endregion */
 
 /* #region Hero */
-body:has(.hero) .header {
-  color: #fff;
+@media (min-width: 80rem) {
+  body:has(.hero) .header {
+    color: #fff;
+  }
 }
 
 .hero__grid {
