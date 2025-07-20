@@ -184,6 +184,10 @@ img {
 
 /* #region Header */
 .header__logo {
+  z-index: 50;
+}
+
+.header__logo {
   -webkit-font-smoothing: antialiased;
   font-family: "neue-haas-grotesk-display", "neue-haas-grotesk-display fallback",
     sans-serif;
