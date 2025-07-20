@@ -656,10 +656,6 @@ img {
   }
 }
 
-.hero {
-  position: relative;
-}
-
 .hero__grid {
   display: grid;
   gap: 0;
