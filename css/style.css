@@ -692,6 +692,12 @@ img {
   width: 100%;
 }
 
+@media (min-width: 80rem) {
+  .listing__header {
+    grid-column: 3 / 11;
+  }
+}
+
 .listing__items {
   display: flex;
   flex-direction: column;
