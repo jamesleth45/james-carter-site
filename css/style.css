@@ -824,3 +824,7 @@ img {
   padding: 0;
   margin: 0;
 }
+
+.breadcrumb__item:last-of-type .breadcrumb__link {
+  font-weight: 700;
+}
