@@ -519,6 +519,10 @@ img {
     line-height: inherit;
   }
 }
+
+.nav__link--selected {
+  font-weight: 700;
+}
 /* #endregion */
 
 /* #region Newsletter */
