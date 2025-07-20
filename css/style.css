@@ -698,6 +698,10 @@ img {
   margin-bottom: 1.25rem;
 }
 
+.listing__heading {
+  font-weight: 700;
+}
+
 .listing__items {
   display: flex;
   flex-direction: column;
