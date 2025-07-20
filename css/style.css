@@ -695,6 +695,7 @@ img {
 @media (min-width: 80rem) {
   .listing__header {
     grid-column: 3 / 11;
+    margin-top: 8.75rem;
   }
 }
 
