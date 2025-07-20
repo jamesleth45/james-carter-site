@@ -695,7 +695,7 @@ img {
 
 .listing__items {
   display: grid;
-  column-gap: 1.25rem;
+  column-gap: 0.625rem;
   row-gap: 1.6875rem;
   grid-column: 1 / -1;
   grid-template-columns: repeat(2, 1fr);
