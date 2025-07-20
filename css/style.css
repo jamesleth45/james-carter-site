@@ -704,7 +704,6 @@ img {
 @media (min-width: 48rem) {
   .listing__items {
     flex-direction: row;
-    gap: 0.625rem;
   }
 }
 
