@@ -824,6 +824,7 @@ img {
   padding: 0;
   margin: 0;
   grid-column: 1 / -1;
+  margin-left: 1.25rem;
 }
 
 .breadcrumb__item:last-of-type {
