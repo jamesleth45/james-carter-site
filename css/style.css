@@ -800,6 +800,13 @@ img {
 /* #endregion */
 
 /* #region Breadcrumb */
+.breadcrumb__grid {
+  display: grid;
+  gap: 0;
+  grid-template-columns: repeat(12, 1fr);
+  width: 100%;
+}
+
 @media (min-width: 80rem) {
   .breadcrumb__list {
     grid-column: 3 / 11;
