@@ -183,10 +183,6 @@ img {
 /* #endregion */
 
 /* #region Header */
-.header {
-  z-index: 50;
-  position: relative;
-}
 
 .header__logo {
   -webkit-font-smoothing: antialiased;
