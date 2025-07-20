@@ -774,13 +774,3 @@ img {
   font-weight: 400;
 }
 /* #endregion */
-
-/* Chrome, Safari, Edge */
-::-webkit-scrollbar-thumb {
-  background-color: #000;
-}
-
-/* Firefox */
-* {
-  scrollbar-color: #000 auto;
-}
