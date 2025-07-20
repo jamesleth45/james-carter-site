@@ -695,7 +695,7 @@ img {
 
 .listing__header {
   grid-column: 3 / 11;
-  margin-bottom: 1.25rem;
+  margin-bottom: 5rem;
 }
 
 .listing__heading {
