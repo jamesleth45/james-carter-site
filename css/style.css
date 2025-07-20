@@ -717,7 +717,7 @@ img {
 
 @media (min-width: 48rem) {
   .product-listing__header {
-    grid-column: 3 / 8;
+    grid-column: 3 / 11;
     margin: 0;
   }
 }
@@ -738,7 +738,7 @@ img {
 
 @media (min-width: 80rem) {
   .product-listing__items {
-    grid-column: 3 / 11;
+    grid-column: 3 / 8;
   }
 }
 
