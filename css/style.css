@@ -699,6 +699,12 @@ img {
   }
 }
 
+@media (min-width: 80rem) {
+  .listing__heading {
+    padding: 1.25rem 0;
+  }
+}
+
 .listing__items {
   display: flex;
   flex-direction: column;
