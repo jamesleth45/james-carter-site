@@ -702,6 +702,7 @@ img {
 
 .product-listing__heading {
   grid-column: 1 / -1;
+  margin-left: 1.25rem;
 }
 
 @media (min-width: 48rem) {
