@@ -704,6 +704,7 @@ img {
   grid-column: 1 / -1;
   height: 3.5rem;
   margin-left: 1.25rem;
+  display: flex;: ;
 }
 
 @media (min-width: 48rem) {
