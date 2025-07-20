@@ -208,7 +208,7 @@ img {
 }
 
 .header__nav {
-  display: nne;
+  display: none;
 }
 
 @media (min-width: 80rem) {
