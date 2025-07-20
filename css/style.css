@@ -692,30 +692,6 @@ img {
   width: 100%;
 }
 
-@media (min-width: 80rem) {
-  .listing__header {
-    grid-column: 4 / 10;
-    margin-top: 8.75rem;
-  }
-}
-
-@media (min-width: 80rem) {
-  .listing__heading {
-    padding: 1.25rem 0;
-    margin: -1.25rem 0 0;
-    position: sticky;
-    z-index: 2;
-    background-color: #fff;
-    top: 0;
-  }
-}
-
-@media (min-width: 80rem) {
-  .listing__description {
-    margin: 1.25rem 0 5rem;
-  }
-}
-
 .listing__items {
   display: flex;
   flex-direction: column;
@@ -732,7 +708,7 @@ img {
 
 @media (min-width: 80rem) {
   .listing__items {
-    grid-column: 3 / 11;
+    grid-column: 4 / 10;
   }
 }
 
