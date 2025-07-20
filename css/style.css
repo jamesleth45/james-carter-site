@@ -702,8 +702,7 @@ img {
 
 .product-listing__heading {
   grid-column: 1 / -1;
-  padding: 1.25rem;
-  margin-top: -1.25rem;
+  height: 3.5rem;
   position: sticky;
   top: 2.5rem;
   z-index: 100;
