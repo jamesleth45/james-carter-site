@@ -683,7 +683,6 @@ img {
 /* #region Product listing */
 .product-listing {
   padding-bottom: 6.25rem;
-  min-height: 100vh;
   margin-top: 3.5rem;
 }
 
