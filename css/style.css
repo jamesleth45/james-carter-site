@@ -682,7 +682,7 @@ img {
 
 @media (min-width: 80rem) {
   .listing {
-    margin-top: 3.5rem;
+    margin-top: 0;
   }
 }
 
