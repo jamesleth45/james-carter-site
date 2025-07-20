@@ -648,7 +648,6 @@ img {
 @media (min-width: 80rem) {
   .home .header {
     color: #fff;
-    background-color: transparent;
   }
 }
 
