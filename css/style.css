@@ -696,6 +696,10 @@ img {
   color: #fff;
   z-index: 2;
 }
+
+.hero__heading {
+  font-size: 2rem;
+}
 /* #endregion */
 
 /* #region Product listing */
