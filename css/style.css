@@ -704,6 +704,10 @@ img {
     sans-serif;
   line-height: 1;
 }
+
+.hero__text {
+  text-decoration: underline;
+}
 /* #endregion */
 
 /* #region Product listing */
