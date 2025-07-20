@@ -800,6 +800,10 @@ img {
 /* #endregion */
 
 /* #region Breadcrumb */
+.breadcrumb {
+  margin-bottom: 6.25rem;
+}
+
 .breadcrumb__grid {
   display: grid;
   gap: 0;
