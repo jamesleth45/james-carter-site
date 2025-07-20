@@ -680,31 +680,11 @@ img {
   min-height: 100vh;
 }
 
-@media (min-width: 80rem) {
-  .listing {
-    margin-top: 8.75rem;
-  }
-}
-
 .listing__grid {
   display: grid;
   gap: 0;
   grid-template-columns: repeat(12, 1fr);
   width: 100%;
-}
-
-.listing__header {
-  grid-column: 3 / 11;
-  margin-bottom: 5rem;
-}
-
-.listing__heading {
-  font-weight: 700;
-  margin-bottom: 2.5rem;
-}
-
-.listing__season-description {
-  margin-top: 0.8125rem;
 }
 
 .listing__items {
