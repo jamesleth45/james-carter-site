@@ -698,7 +698,7 @@ img {
 }
 
 .hero__heading {
-  font-size: 1rem;
+  font-size: 1.25rem;
   -webkit-font-smoothing: antialiased;
   font-family: "neue-haas-grotesk-display", "neue-haas-grotesk-display fallback",
     sans-serif;
