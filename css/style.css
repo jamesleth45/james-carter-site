@@ -706,6 +706,7 @@ img {
   margin-left: 1.25rem;
   display: flex;
   align-items: top;
+  line-height: 1.5625rem;
 }
 
 @media (min-width: 48rem) {
