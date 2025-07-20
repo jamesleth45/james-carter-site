@@ -694,10 +694,7 @@ img {
 }
 
 .listing__header {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-  grid-column: 1 / -1;
+  grid-column: 3 / 11;
 }
 
 .listing__items {
