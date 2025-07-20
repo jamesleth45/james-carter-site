@@ -700,6 +700,17 @@ img {
   width: 100%;
 }
 
+.product-listing__heading {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 48rem) {
+  .product-listing__heading {
+    gap: 0.625rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .product-listing__items {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
