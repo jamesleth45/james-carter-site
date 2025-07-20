@@ -705,7 +705,7 @@ img {
   height: 3.5rem;
   margin-left: 1.25rem;
   display: flex;
-  align-items: center;
+  align-items: top;
 }
 
 @media (min-width: 48rem) {
