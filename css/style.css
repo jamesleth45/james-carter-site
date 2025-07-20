@@ -738,7 +738,7 @@ img {
 
 @media (min-width: 80rem) {
   .product-listing__items {
-    grid-column: 3 / 8;
+    grid-column: 3 / 9;
   }
 }
 
