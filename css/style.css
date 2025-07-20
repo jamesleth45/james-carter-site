@@ -702,7 +702,7 @@ img {
 
 @media (min-width: 80rem) {
   .listing__items {
-    grid-column: 4 / 10;
+    grid-column: 3 / 11;
   }
 }
 
