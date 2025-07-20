@@ -643,10 +643,9 @@ img {
 /* #endregion */
 
 /* #region Hero */
-@media (min-width: 80rem) {
-  body:has(.hero) .header {
-    color: #fff;
-  }
+.home .header {
+  color: #fff;
+  background-color: transparent;
 }
 
 .hero__grid {
