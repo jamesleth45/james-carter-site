@@ -703,11 +703,7 @@ img {
 .product-listing__heading {
   grid-column: 1 / -1;
   height: 3.5rem;
-  position: sticky;
-  top: 3.5rem;
-  z-index: 100;
-  background-color: rgb(255, 255, 255, 0.9);
-  backdrop-filter: blur(10px);
+  margin-left: 1.25rem;
 }
 
 @media (min-width: 48rem) {
