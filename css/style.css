@@ -798,3 +798,10 @@ img {
   font-weight: 400;
 }
 /* #endregion */
+
+/* #region Breadcrumb */
+@media (min-width: 80rem) {
+  .breadcrumb__list {
+    grid-column: 3 / 11;
+  }
+}
