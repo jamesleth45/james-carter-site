@@ -759,7 +759,7 @@ img {
   font-weight: 400;
 }
 
-.product-listingg__info {
+.product-listing__info {
   display: flex;
   flex-direction: column;
   margin-top: 0.4375rem;
