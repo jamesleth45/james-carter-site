@@ -342,6 +342,7 @@ img {
 @media (min-width: 80rem) {
   .footer__list:nth-child(4) {
     display: block;
+    grid-column: span 4;
   }
 }
 
