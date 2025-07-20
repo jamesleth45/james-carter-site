@@ -9,7 +9,8 @@
 
 html,
 body {
-  font-family: "neue-haas-grotesk-text", "neue-haas-grotesk-text fallback", sans-serif;
+  font-family: "neue-haas-grotesk-text", "neue-haas-grotesk-text fallback",
+    sans-serif;
   height: 100%;
   -webkit-tap-highlight-color: transparent;
   -webkit-text-size-adjust: 100%;
@@ -161,7 +162,12 @@ input:-webkit-autofill {
   -webkit-text-fill-color: #000 !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   all: unset;
   font-weight: 700;
   display: block;
@@ -178,7 +184,8 @@ img {
 /* #region Header */
 .header__logo {
   -webkit-font-smoothing: antialiased;
-  font-family: "neue-haas-grotesk-display", "neue-haas-grotesk-display fallback", sans-serif;
+  font-family: "neue-haas-grotesk-display", "neue-haas-grotesk-display fallback",
+    sans-serif;
   font-size: 1.25rem;
   font-weight: 700;
   left: 0;
@@ -441,7 +448,7 @@ img {
     display: grid;
     grid-column: 9 / 13;
     grid-template-columns: repeat(4, 1fr);
-    padding: 8.75rem 1.6875rem 1.6875rem .625rem;
+    padding: 8.75rem 1.6875rem 1.6875rem 0.625rem;
   }
 }
 
@@ -552,9 +559,6 @@ img {
   text-decoration: underline;
 }
 
-
-
-
 .newsletter__checkbox {
   display: flex;
   align-items: flex-start;
@@ -573,11 +577,9 @@ img {
 /* Actual visual checkbox */
 .newsletter__checkbox-box {
   background-color: transparent;
-  height: .5625rem;
-  width: .5625rem;
-  box-shadow: 
-    0 0 0 0.0625rem inset,
-    0 0 0 0.125rem #fff inset;
+  height: 0.5625rem;
+  width: 0.5625rem;
+  box-shadow: 0 0 0 0.0625rem inset, 0 0 0 0.125rem #fff inset;
   display: block;
   flex-shrink: 0;
   position: relative;
@@ -588,7 +590,6 @@ img {
 .newsletter__checkbox-input:checked ~ .newsletter__checkbox-box {
   background-color: #000;
 }
-
 
 @media (min-width: 48rem) {
   .newsletter__checkbox-box {
@@ -618,7 +619,6 @@ img {
 .newsletter__input:not(:placeholder-shown) + .newsletter__label {
   transform: translateY(-15px);
 }
-
 
 /* #endregion */
 
@@ -673,7 +673,7 @@ img {
 }
 /* #endregion */
 
-/* #region Product listing */
+/* #region Listing */
 .listing {
   margin-top: 3.5rem;
   padding-bottom: 6.25rem;
@@ -708,7 +708,7 @@ img {
 
 @media (min-width: 80rem) {
   .listing__items {
-    grid-column: 4 / 10;
+    grid-column: 3 / 11;
   }
 }
 
