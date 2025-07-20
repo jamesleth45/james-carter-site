@@ -749,7 +749,7 @@ img {
 }
 
 @media (min-width: 80rem) {
-  .product-listingg__meta {
+  .product-listing__meta {
     padding-left: 0;
   }
 }
