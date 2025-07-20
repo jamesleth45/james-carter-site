@@ -677,6 +677,7 @@ img {
 .listing {
   margin-top: 3.5rem;
   padding-bottom: 6.25rem;
+  min-height: 100vh;
 }
 
 @media (min-width: 80rem) {
