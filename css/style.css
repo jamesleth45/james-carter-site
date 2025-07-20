@@ -810,12 +810,6 @@ img {
   width: 100%;
 }
 
-@media (min-width: 80rem) {
-  .breadcrumb__list {
-    grid-column: 3 / 11;
-  }
-}
-
 .breadcrumb__list {
   display: flex;
   flex-wrap: wrap;
@@ -825,6 +819,12 @@ img {
   margin: 0;
   grid-column: 1 / -1;
   margin-left: 1.25rem;
+}
+
+@media (min-width: 80rem) {
+  .breadcrumb__list {
+    grid-column: 3 / 11;
+  }
 }
 
 .breadcrumb__item:last-of-type {
