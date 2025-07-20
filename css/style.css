@@ -698,7 +698,6 @@ img {
   flex-direction: column;
   gap: 1.25rem;
   grid-column: 1 / -1;
-  grid-template-columns: repeat(12, 1fr);
 }
 
 @media (min-width: 48rem) {
