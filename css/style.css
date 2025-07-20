@@ -706,6 +706,7 @@ img {
     position: sticky;
     z-index: 2;
     background-color: #fff;
+    top: 0;
   }
 }
 
