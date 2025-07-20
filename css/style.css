@@ -700,12 +700,6 @@ img {
   flex-direction: row;
 }
 
-@media (min-width: 48rem) {
-  .listing__items {
-    flex-direction: row;
-  }
-}
-
 @media (min-width: 80rem) {
   .listing__items {
     grid-column: 3 / 11;
