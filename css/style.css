@@ -704,6 +704,7 @@ img {
   flex-direction: column;
   gap: 1.25rem;
   grid-column: 1 / -1;
+  margin-top: 0.8125rem;
 }
 
 @media (min-width: 48rem) {
