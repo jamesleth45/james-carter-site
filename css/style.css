@@ -697,7 +697,7 @@ img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column: 1 / -1;
-  flex-direction: row;
+  row-gap: 1.25rem;
 }
 
 @media (min-width: 48rem) {
