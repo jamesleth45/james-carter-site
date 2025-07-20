@@ -700,6 +700,15 @@ img {
   width: 100%;
 }
 
+.product-listing__header {
+  grid-column: 1 / -1;
+  padding-bottom: 1.25rem;
+  margin-left: 1.25rem;
+  display: flex;
+  align-items: top;
+  line-height: 1.5625rem;
+}
+
 .product-listing__heading {
   grid-column: 1 / -1;
   padding-bottom: 1.25rem;
