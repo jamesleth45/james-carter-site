@@ -777,7 +777,7 @@ img {
 
 /* Chrome, Safari, Edge */
 ::-webkit-scrollbar-thumb {
-  background: red !important;
+  background: #000 !important;
 }
 
 /* Firefox */
