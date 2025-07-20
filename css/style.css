@@ -707,7 +707,7 @@ img {
   position: sticky;
   top: 2.5rem;
   z-index: 100;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255, 0.9);
 }
 
 @media (min-width: 48rem) {
