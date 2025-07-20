@@ -702,6 +702,10 @@ img {
   font-weight: 700;
 }
 
+.listing__season-description {
+  margin-top: 0.8125rem;
+}
+
 .listing__items {
   display: flex;
   flex-direction: column;
