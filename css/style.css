@@ -700,6 +700,7 @@ img {
 
 .listing__heading {
   font-weight: 700;
+  margin-bottom: 2.5rem;
 }
 
 .listing__season-description {
