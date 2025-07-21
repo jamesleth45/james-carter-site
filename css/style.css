@@ -873,7 +873,3 @@ body:has(.listing) .footer {
 .header__item--bag {
   margin-right: 1rem;
 }
-
-.shopify-buy__cart {
-  width: 1rem;
-}
