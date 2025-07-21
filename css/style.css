@@ -860,22 +860,3 @@ body:has(.listing) .footer {
   font-weight: 700;
 }
 /* #endregion */
-
-.shopify-buy-frame--toggle.is-sticky {
-  position: fixed !important;
-  top: 8.75rem !important;
-}
-
-.shopify-buy-frame--toggle.is-sticky {
-  right: 1.6875rem !important;
-}
-
-.header__item--bag {
-  margin-right: 1rem;
-}
-
-/* Target the cart iframe container */
-.shopify-buy__cart {
-  width: 400px !important;
-  max-width: 90vw;
-}
