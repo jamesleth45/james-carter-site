@@ -13,9 +13,9 @@
 
 html,
 body {
+  height: 100%;
   font-family: "neue-haas-grotesk-text", "neue-haas-grotesk-text fallback",
     sans-serif;
-  height: 100%;
   -webkit-tap-highlight-color: transparent;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
@@ -57,6 +57,8 @@ a {
 ul,
 ol {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 img,
@@ -79,12 +81,21 @@ input,
 textarea,
 select {
   appearance: none;
-  background: none;
+  -webkit-appearance: none;
+  background: transparent;
   border: none;
+  border-radius: 0;
   color: inherit;
   font: inherit;
   outline: none;
   text-transform: inherit;
+}
+
+input,
+textarea,
+button,
+select {
+  outline: none;
 }
 
 button,
@@ -92,27 +103,6 @@ select,
 input[type="checkbox"],
 input[type="radio"] {
   cursor: pointer;
-}
-
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-fieldset {
-  border: none;
-}
-
-::selection {
-  background-color: #000;
-  color: #fff;
-}
-
-@media (hover: hover) {
-  a:hover,
-  button:hover {
-    font-weight: 700;
-  }
 }
 
 input[type="text"],
@@ -140,6 +130,20 @@ textarea::placeholder {
   color: #999;
 }
 
+input:-webkit-autofill {
+  -webkit-text-fill-color: #000 !important;
+  box-shadow: 0 0 0 1000px #fff inset !important;
+}
+
+input:focus,
+textarea:focus,
+button:focus,
+select:focus {
+  outline: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
@@ -147,22 +151,26 @@ input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
 
-input,
-textarea,
-button,
-select {
-  -webkit-appearance: none;
-  appearance: none;
-  background: transparent;
-  border-radius: 0;
-  outline: none;
+table {
+  border-collapse: collapse;
+  width: 100%;
 }
 
-input:-webkit-autofill {
-  -webkit-text-fill-color: #000 !important;
-  box-shadow: 0 0 0 1000px #fff inset !important;
+fieldset {
+  border: none;
 }
 
+::selection {
+  background-color: #000;
+  color: #fff;
+}
+
+@media (hover: hover) {
+  a:hover,
+  button:hover {
+    font-weight: 700;
+  }
+}
 /* #endregion */
 
 /* #region Header */
