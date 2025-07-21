@@ -274,10 +274,7 @@ fieldset {
 
 @media (min-width: 80rem) {
   .footer {
-    padding-bottom: 4.375rem;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
+    padding: 0 0 4.375rem;
   }
 }
 
