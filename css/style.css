@@ -728,6 +728,12 @@ fieldset {
   }
 }
 
+@media (min-width: 80rem) {
+  .listing__subtitle {
+    margin-top: 2.5rem;
+  }
+}
+
 .listing__description {
   margin-top: 0.8125rem;
   margin-bottom: 5rem;
