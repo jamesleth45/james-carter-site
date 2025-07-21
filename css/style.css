@@ -780,15 +780,6 @@ img {
   overflow: hidden;
 }
 
-.listing__image {
-  width: 100%;
-  display: block;
-  height: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 .listing__meta {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
