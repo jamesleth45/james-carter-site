@@ -697,7 +697,7 @@ fieldset {
 }
 
 .listing__controls {
-  position: sticky;
+  position: fixed;
   bottom: 0;
 }
 
