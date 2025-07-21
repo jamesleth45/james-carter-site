@@ -160,3 +160,15 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 // #endregion
+
+<script>
+  const toggleButton = document.getElementById('viewToggleButton');
+  const listing = document.querySelector('.listing');
+
+  toggleButton.addEventListener('click', () => {
+    listing.classList.toggle('listing--view-2');
+
+    const isTwoColumn = listing.classList.contains('listing--view-2');
+    toggleButton.textContent = isTwoColumn ? 'View by 1' : 'View by 2';
+  });
+</script>
