@@ -712,7 +712,7 @@ fieldset {
 @media (min-width: 80rem) {
   .listing__controls {
     right: 0;
-    top: 8.75rem;
+    top: 10rem;
     background-color: transparent;
     backdrop-filter: none;
     width: auto;
