@@ -185,7 +185,7 @@ fieldset {
   padding: 1.25rem;
   position: fixed;
   top: 0;
-  z-index: 101;
+  z-index: 100;
 }
 
 @media (min-width: 80rem) {
