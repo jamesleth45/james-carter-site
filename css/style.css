@@ -604,14 +604,14 @@ fieldset {
   position: relative;
 }
 
+.search__input {
+  padding-right: 3.75rem;
+}
+
 .search__clear {
   position: absolute;
   right: 0;
   top: 0;
-}
-
-.search__input {
-  padding-right: 3.75rem;
 }
 /* #endregion */
 
