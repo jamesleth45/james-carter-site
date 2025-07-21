@@ -712,7 +712,8 @@ fieldset {
   align-items: flex-start; /* ← aligns them to the left */
 }
 
-.listing__heading {
+.listing__heading,
+.listing__subtitle {
   line-height: 1.5625rem;
 }
 
