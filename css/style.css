@@ -714,6 +714,8 @@ img {
   line-height: 1.5625rem;
   margin-left: 1.25rem;
   margin-right: 1.25rem;
+  background-color: rgb(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
 }
 
 .listing {
