@@ -627,7 +627,13 @@ body:has(.listing) .footer {
 }
 
 .hero__link {
-  grid-column: 5 / 9;
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 80rem) {
+  .hero__link {
+    grid-column: 5 / 9;
+  }
 }
 
 .hero__image {
