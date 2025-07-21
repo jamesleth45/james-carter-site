@@ -711,6 +711,7 @@ img {
 .heading {
   position: sticky;
   top: 3.5rem;
+  line-height: 1.5625rem;
 }
 
 .listing {
@@ -738,10 +739,6 @@ img {
   display: flex;
   flex-direction: column; /* ← this stacks children vertically */
   align-items: flex-start; /* ← aligns them to the left */
-}
-
-.listing__heading {
-  line-height: 1.5625rem;
 }
 
 .listing__subtitle {
