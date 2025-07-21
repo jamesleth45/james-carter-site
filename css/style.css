@@ -633,8 +633,6 @@ fieldset {
   display: block;
   grid-column: 1 / -1;
   width: 100%;
-  position: relative;
-  z-index: 3;
 }
 
 .hero__image {
