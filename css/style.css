@@ -729,7 +729,6 @@ img {
 .product-listing__header {
   margin-top: 0.25rem;
   grid-column: 1 / -1;
-  padding-bottom: 1.25rem;
   margin-left: 1.25rem;
   margin-right: 1.25rem;
   display: flex;
