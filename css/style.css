@@ -1,4 +1,4 @@
-/* #region Global */
+/* #region base */
 *,
 *::before,
 *::after {
@@ -80,11 +80,11 @@ button,
 input,
 textarea,
 select {
-  appearance: none;
   -webkit-appearance: none;
+  appearance: none;
   background: transparent;
-  border: none;
   border-radius: 0;
+  border: none;
   color: inherit;
   font: inherit;
   outline: none;
@@ -139,9 +139,9 @@ input:focus,
 textarea:focus,
 button:focus,
 select:focus {
-  outline: none;
-  box-shadow: none;
   -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
 }
 
 input[type="search"]::-webkit-search-decoration,
@@ -173,7 +173,7 @@ fieldset {
 }
 /* #endregion */
 
-/* #region Header */
+/* #region header */
 .header__logo {
   -webkit-font-smoothing: antialiased;
   font-family: "neue-haas-grotesk-display", "neue-haas-grotesk-display fallback",
