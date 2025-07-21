@@ -269,7 +269,7 @@ fieldset {
 
 /* #region Footer */
 .footer {
-  padding: 1.25rem 1.25rem 2.5rem;
+  padding: 1.25rem 1.25rem 3.5rem;
 }
 
 @media (min-width: 80rem) {
