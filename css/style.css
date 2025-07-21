@@ -866,6 +866,6 @@ body:has(.listing) .footer {
 }
 
 .shopify-buy__cart-toggle {
-  background-color: transparent;
+  background-color: transparent !important;
   color: #000;
 }
