@@ -702,6 +702,7 @@ fieldset {
   height: 3.5rem;
   backdrop-filter: blur(10px);
   background-color: rgb(255, 255, 255, 0.9);
+  width: 100%;
 }
 
 .listing__grid {
