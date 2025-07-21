@@ -867,5 +867,5 @@ body:has(.listing) .footer {
 }
 
 .shopify-buy-frame--toggle.is-sticky {
-  right: 1.6875rem;
+  right: 1.6875rem !important;
 }
