@@ -278,7 +278,7 @@ img {
 
 /* #region Footer */
 .footer {
-  padding: 1.25rem 1.25rem 2.5rem;
+  padding: 0 1.25rem 2.5rem;
 }
 
 @media (min-width: 80rem) {
