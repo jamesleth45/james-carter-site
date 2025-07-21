@@ -873,3 +873,9 @@ body:has(.listing) .footer {
 .header__item--bag {
   margin-right: 1rem;
 }
+
+/* Target the cart iframe container */
+iframe.shopify-buy-frame--cart {
+  width: 400px !important;
+  max-width: 90vw;
+}
