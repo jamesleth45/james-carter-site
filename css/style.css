@@ -183,7 +183,6 @@ img {
 /* #endregion */
 
 /* #region Header */
-
 .header__logo {
   -webkit-font-smoothing: antialiased;
   font-family: "neue-haas-grotesk-display", "neue-haas-grotesk-display fallback",
@@ -723,7 +722,7 @@ img {
 .product-listing__grid {
   display: grid;
   gap: 0;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(10, 1fr);
   width: 100%;
 }
 
@@ -744,7 +743,7 @@ img {
 
 @media (min-width: 48rem) {
   .product-listing__header {
-    grid-column: 3 / 11;
+    grid-column: 3 / 9;
     margin: 0;
   }
 }
@@ -765,7 +764,7 @@ img {
 
 @media (min-width: 80rem) {
   .product-listing__items {
-    grid-column: 3 / 11;
+    grid-column: 3 / 9;
   }
 }
 
@@ -834,7 +833,7 @@ img {
 .breadcrumb__grid {
   display: grid;
   gap: 0;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(10, 1fr);
   width: 100%;
 }
 
@@ -851,7 +850,7 @@ img {
 
 @media (min-width: 80rem) {
   .breadcrumb__list {
-    grid-column: 3 / 11;
+    grid-column: 3 / 9;
     margin-left: 0;
   }
 }
