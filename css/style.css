@@ -860,3 +860,8 @@ body:has(.listing) .footer {
   font-weight: 700;
 }
 /* #endregion */
+
+.shopify-buy-frame--toggle.is-sticky {
+  position: fixed !important;
+  top: 8.75rem !important;
+}
