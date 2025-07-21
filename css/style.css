@@ -741,7 +741,7 @@ img {
   margin-top: 1.875rem;
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 80rem) {
   .product-listing__header {
     grid-column: 3 / 11;
     margin: 0;
