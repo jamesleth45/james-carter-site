@@ -637,6 +637,7 @@ fieldset {
 
 .hero__image {
   display: block;
+  grid-column: 1 / -1;
   height: 100svh;
   object-fit: cover;
   padding-top: 3.5rem;
