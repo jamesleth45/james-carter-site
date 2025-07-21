@@ -870,6 +870,6 @@ body:has(.listing) .footer {
   right: 1.6875rem !important;
 }
 
-.header__cart {
+.header__item--bag {
   margin-right: 1rem;
 }

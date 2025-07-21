@@ -69,7 +69,7 @@
               </svg>
             </button>
           </li>
-          <li class="header__item">
+          <li class="header__item header__item--bag">
             <button class="header__button" type="button">Bag</button>
           </li>
           <li class="header__item">
@@ -471,5 +471,159 @@
         </div>
       </nav>
     </footer>
+    <script type="text/javascript">
+      (function () {
+        var scriptURL =
+          "https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js";
+
+        if (window.ShopifyBuy) {
+          if (window.ShopifyBuy.UI) {
+            ShopifyBuyInit();
+          } else {
+            loadScript();
+          }
+        } else {
+          loadScript();
+        }
+
+        function loadScript() {
+          var script = document.createElement("script");
+          script.async = true;
+          script.src = scriptURL;
+          (
+            document.getElementsByTagName("head")[0] ||
+            document.getElementsByTagName("body")[0]
+          ).appendChild(script);
+          script.onload = ShopifyBuyInit;
+        }
+
+        function ShopifyBuyInit() {
+          var client = ShopifyBuy.buildClient({
+            domain: "j6vrc5-m0.myshopify.com",
+            storefrontAccessToken: "5257b9bc212fb6eec58eb28fc5b6d686",
+          });
+
+          ShopifyBuy.UI.onReady(client).then(function (ui) {
+            ui.createComponent("product", {
+              id: "15181145932149",
+              node: document.getElementById("product-component-1753108264803"),
+              moneyFormat: "%E2%82%AC%7B%7Bamount_with_comma_separator%7D%7D",
+              options: {
+                product: {
+                  contents: {
+                    img: false,
+                    title: false,
+                    price: false,
+                    button: false,
+                    buttonWithQuantity: false,
+                  },
+                  styles: {
+                    product: {
+                      display: "none",
+                    },
+                  },
+                },
+                modalProduct: {
+                  contents: {
+                    img: false,
+                    imgWithCarousel: false,
+                    button: false,
+                    buttonWithQuantity: false,
+                  },
+                  styles: {
+                    product: {
+                      display: "none",
+                    },
+                  },
+                },
+                cart: {
+                  styles: {
+                    button: {
+                      "font-size": "13px",
+                      "padding-top": "14.5px",
+                      "padding-bottom": "14.5px",
+                      "background-color": "#000000",
+                      ":hover": {
+                        "background-color": "#000000",
+                      },
+                      ":focus": {
+                        "background-color": "#000000",
+                      },
+                      "border-radius": "0px",
+                    },
+                    title: { color: "#000000" },
+                    header: { color: "#000000" },
+                    lineItems: { color: "#000000" },
+                    subtotalText: { color: "#000000" },
+                    subtotal: { color: "#000000" },
+                    notice: { color: "#000000" },
+                    currency: { color: "#000000" },
+                    close: {
+                      color: "#000000",
+                      ":hover": { color: "#000000" },
+                    },
+                    empty: { color: "#000000" },
+                    noteDescription: { color: "#000000" },
+                    discountText: { color: "#000000" },
+                    discountIcon: { fill: "#000000" },
+                    discountAmount: { color: "#000000" },
+                  },
+                  text: {
+                    title: "Bag",
+                    total: "Subtotal",
+                    button: "Checkout",
+                  },
+                  popup: false,
+                },
+                toggle: {
+                  styles: {
+                    toggle: {
+                      right: "1.6875rem",
+                      "background-color": "transparent",
+                      color: "#000000",
+                      padding: 0,
+                      "font-family":
+                        '"neue-haas-grotesk-text", "neue-haas-grotesk-text fallback", sans-serif',
+                      "min-width": 0,
+                      ":hover": { "background-color": "transparent" },
+                      ":focus": { "background-color": "transparent" },
+                    },
+                    count: {
+                      "font-size": "10px",
+                      "margin-top": "2.3rem",
+                      "margin-bottom": "0",
+                      "margin-left": "1rem",
+                    },
+                  },
+                },
+                lineItem: {
+                  styles: {
+                    variantTitle: { color: "#000000" },
+                    title: { color: "#000000" },
+                    price: { color: "#000000" },
+                    fullPrice: { color: "#000000" },
+                    discount: { color: "#000000" },
+                    discountIcon: { fill: "#000000" },
+                    quantity: { color: "#000000" },
+                    quantityIncrement: {
+                      color: "#000000",
+                      "border-color": "#000000",
+                    },
+                    quantityDecrement: {
+                      color: "#000000",
+                      "border-color": "#000000",
+                    },
+                    quantityInput: {
+                      color: "#000000",
+                      "border-color": "#000000",
+                    },
+                  },
+                },
+              },
+            });
+          });
+        }
+      })();
+    </script>
   </body>
 </html>
