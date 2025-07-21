@@ -712,12 +712,14 @@ fieldset {
 @media (min-width: 80rem) {
   .listing__controls {
     right: 0;
-    top: 10rem;
+    top: 11.25rem;
     background-color: transparent;
     backdrop-filter: none;
     width: auto;
     padding: 0;
     height: auto;
+    display: flex;
+    flex-direction: column;
   }
 }
 
