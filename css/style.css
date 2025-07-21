@@ -296,7 +296,6 @@ img {
 
 .footer__lists {
   grid-column: 3 / 11;
-  grid-template-columns: repeat(12, 1fr);
   display: grid;
   gap: 0;
   grid-template-columns: repeat(12, 1fr);
