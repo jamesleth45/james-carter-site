@@ -320,7 +320,6 @@ fieldset {
 }
 
 .footer__button {
-  align-items: center;
   display: inline-flex;
   gap: 0.625rem;
   line-height: 1.5625rem;
