@@ -722,6 +722,7 @@ fieldset {
 }
 
 @media (min-width: 80rem) {
+  .listing__heading,
   .listing__subtitle {
     line-height: inherit;
   }
