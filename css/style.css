@@ -727,13 +727,16 @@ img {
 }
 
 .product-listing__header {
-  margin-top: 0.25rem;
   grid-column: 1 / -1;
   margin-left: 1.25rem;
   margin-right: 1.25rem;
   display: flex;
   flex-direction: column; /* ← this stacks children vertically */
   align-items: flex-start; /* ← aligns them to the left */
+}
+
+.product-listing__heading {
+  line-height: 1.5625rem;
 }
 
 .product-listing__subtitle {
