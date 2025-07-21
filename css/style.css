@@ -158,14 +158,6 @@ select {
   outline: none;
 }
 
-input:focus,
-textarea:focus,
-button:focus,
-select:focus {
-  outline: none;
-  box-shadow: none;
-}
-
 input:-webkit-autofill {
   -webkit-text-fill-color: #000 !important;
   box-shadow: 0 0 0 1000px #fff inset !important;
