@@ -313,6 +313,7 @@ img {
 @media (min-width: 80rem) {
   .footer__list:nth-child(1) {
     margin-left: 1.6875rem;
+    opacity: 0;
   }
 }
 
