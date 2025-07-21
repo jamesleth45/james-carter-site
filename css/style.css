@@ -384,7 +384,7 @@ img {
 .panel__grid {
   display: grid;
   gap: 0;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(10, 1fr);
   height: 100%;
   width: 100%;
 }
