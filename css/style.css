@@ -866,6 +866,6 @@ body:has(.listing) .footer {
   top: 8.75rem !important;
 }
 
-.shopify-buy__icon-cart--side {
+.shopify-buy__icon-cart__group {
   display: none !important;
 }
