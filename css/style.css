@@ -864,3 +864,8 @@ body:has(.listing) .footer {
 .shopify-buy-frame--toggle.is-sticky {
   top: 8.75rem;
 }
+
+.shopify-buy__cart-toggle {
+  background-color: transparent;
+  color: #000;
+}
