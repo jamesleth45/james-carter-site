@@ -875,7 +875,7 @@ body:has(.listing) .footer {
 }
 
 /* Target the cart iframe container */
-iframe.shopify-buy__cart {
+.shopify-buy__cart {
   width: 400px !important;
   max-width: 90vw;
 }
