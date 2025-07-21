@@ -339,8 +339,8 @@ img {
   }
 }
 
-/* 4th list — Social */
-.footer__list:nth-child(4) {
+/* 3rd list — Social */
+.footer__list:nth-child(3) {
   display: none;
 }
 
