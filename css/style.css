@@ -860,12 +860,3 @@ body:has(.listing) .footer {
   font-weight: 700;
 }
 /* #endregion */
-
-.shopify-buy-frame--toggle.is-sticky {
-  top: 8.75rem;
-}
-
-.is-sticky.shopify-buy__cart-toggle {
-  background-color: transparent !important;
-  color: #000;
-}
