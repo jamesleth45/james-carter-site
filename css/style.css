@@ -713,7 +713,7 @@ img {
   top: 3.5rem;
   line-height: 1.5625rem;
   padding-left: 1.25rem;
-  padding: 1.25rem;
+  padding-right: 1.25rem;
   background-color: rgb(255, 255, 255, 0.9);
   backdrop-filter: blur(10px);
 }
