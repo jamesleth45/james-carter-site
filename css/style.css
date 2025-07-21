@@ -865,3 +865,6 @@ body:has(.listing) .footer {
   position: fixed !important;
   top: 8.75rem !important;
 }
+.shopify-buy__cart-toggle .shopify-buy__cart-toggle {
+  padding: 0 !important;
+}
