@@ -766,6 +766,10 @@ fieldset {
   row-gap: 1.25rem;
 }
 
+.listing--view-2 .listing__items {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 @media (min-width: 48rem) {
   .listing__items {
     gap: 0.625rem;
