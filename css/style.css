@@ -321,11 +321,6 @@ img {
   }
 }
 
-/* 2nd list — Main links */
-.footer__list:nth-child(2) {
-  margin-top: 2.5rem;
-}
-
 @media (min-width: 80rem) {
   .footer__list:nth-child(2) {
     margin-top: 0;
