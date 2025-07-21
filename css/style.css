@@ -869,3 +869,7 @@ body:has(.listing) .footer {
 .shopify-buy-frame--toggle.is-sticky {
   right: 1.6875rem !important;
 }
+
+.header__cart {
+  margin-right: 1rem;
+}
