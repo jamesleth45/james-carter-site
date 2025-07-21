@@ -709,6 +709,12 @@ fieldset {
   align-items: center;
 }
 
+@media (min-width: 80rem) {
+  .listing__items {
+    right: 8.75rem;
+  }
+}
+
 .listing__grid {
   display: grid;
   gap: 0;
