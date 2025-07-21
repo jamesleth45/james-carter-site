@@ -20,7 +20,7 @@
 
     <title>JAMES CARTER</title>
   </head>
-  <body class="home">
+  <body>
     <header class="header">
       <a href="/" class="header__logo">James Carter</a>
       <nav class="header__nav">
@@ -132,195 +132,198 @@
         </button>
       </div>
     </header>
-
-    <section class="hero">
-      <div class="hero__grid">
-        <a href="/shop/" class="hero__link">
-          <img
-            src="/images/hero.jpg"
-            class="hero__image"
-            alt="Model wearing a white James Carter t-shirt and black jeans, seated on volcanic rock"
-          />
-        </a>
-        <div class="hero__content">
-          <h1 class="hero__heading">Summer 25</h1>
-          <p class="hero__text">Shop now</p>
+    <main>
+      <section class="hero">
+        <div class="hero__grid">
+          <a href="/shop/" class="hero__link">
+            <img
+              src="/images/hero.jpg"
+              class="hero__image"
+              alt="Model wearing a white James Carter t-shirt and black jeans, seated on volcanic rock"
+            />
+          </a>
+          <div class="hero__content">
+            <h1 class="hero__heading">Summer 25</h1>
+            <p class="hero__text">Shop now</p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <div class="panels">
-      <div id="panelNav" class="panel" data-state="closed">
-        <div class="panel__grid">
-          <button class="panel__close" type="button">
-            <svg
-              class="panel__icon"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-            >
-              <path d="M17 7L7 17M17 17L7 7" stroke="black" />
-            </svg>
-            <span class="panel__text">Close</span>
-          </button>
-          <div class="panel__inner">
-            <div class="panel__content">
-              <nav class="nav">
-                <ul class="nav__list">
-                  <li class="nav__item">
-                    <a href="/shop/" class="nav__link">Shop</a>
-                  </li>
-                  <li class="nav__item nav__item--space">
-                    <a
-                      href="https://www.jamescarter.eu/preview"
-                      class="nav__link"
-                      >Spring/Summer 2025 Preview</a
-                    >
-                  </li>
-                  <li class="nav__item">
-                    <a
-                      href="https://www.jamescarter.eu/lookbook"
-                      class="nav__link"
-                      >Spring/Summer 2025 Lookbook</a
-                    >
-                  </li>
-                  <li class="nav__item nav__item--break">
-                    <a href="https://www.jamescarter.eu/brand" class="nav__link"
-                      >Brand</a
-                    >
-                  </li>
-                </ul>
-                <ul class="nav__list">
-                  <li class="nav__item">
-                    <button class="nav__button" type="button">Bag</button>
-                  </li>
-                  <li class="nav__item">
-                    <a href="#" class="nav__link">Log in / Register</a>
-                  </li>
-                  <li class="nav__item">
-                    <a href="#" class="nav__link">Client Service</a>
-                  </li>
-                  <li class="nav__item nav__item--region">
-                    <button class="nav__button" type="button">
-                      International Site | en
-                    </button>
-                  </li>
-                </ul>
-              </nav>
+      <div class="panels">
+        <div id="panelNav" class="panel" data-state="closed">
+          <div class="panel__grid">
+            <button class="panel__close" type="button">
+              <svg
+                class="panel__icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path d="M17 7L7 17M17 17L7 7" stroke="black" />
+              </svg>
+              <span class="panel__text">Close</span>
+            </button>
+            <div class="panel__inner">
+              <div class="panel__content">
+                <nav class="nav">
+                  <ul class="nav__list">
+                    <li class="nav__item">
+                      <a href="/shop/" class="nav__link">Shop</a>
+                    </li>
+                    <li class="nav__item nav__item--space">
+                      <a
+                        href="https://www.jamescarter.eu/preview"
+                        class="nav__link"
+                        >Spring/Summer 2025 Preview</a
+                      >
+                    </li>
+                    <li class="nav__item">
+                      <a
+                        href="https://www.jamescarter.eu/lookbook"
+                        class="nav__link"
+                        >Spring/Summer 2025 Lookbook</a
+                      >
+                    </li>
+                    <li class="nav__item nav__item--break">
+                      <a
+                        href="https://www.jamescarter.eu/brand"
+                        class="nav__link"
+                        >Brand</a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="nav__list">
+                    <li class="nav__item">
+                      <button class="nav__button" type="button">Bag</button>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#" class="nav__link">Log in / Register</a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#" class="nav__link">Client Service</a>
+                    </li>
+                    <li class="nav__item nav__item--region">
+                      <button class="nav__button" type="button">
+                        International Site | en
+                      </button>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div id="panelSearch" class="panel" data-state="closed">
-        <div class="panel__grid">
-          <button class="panel__close" type="button">
-            <svg
-              class="panel__icon"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-            >
-              <path d="M17 7L7 17M17 17L7 7" stroke="black" />
-            </svg>
-            <span class="panel__text">Close</span>
-          </button>
-          <div class="panel__inner">
-            <div class="panel__content">
-              <form action="/find" method="GET" class="search">
-                <input
-                  type="search"
-                  id="siteSearch"
-                  name="q"
-                  class="search__input"
-                  placeholder="Search"
-                  enterkeyhint="search"
-                  autocomplete="off"
-                />
-                <button type="button" class="search__clear" hidden>
-                  Clear
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="panelNewsletter" class="panel" data-state="closed">
-        <div class="panel__grid">
-          <button class="panel__close" type="button">
-            <svg
-              class="panel__icon"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-            >
-              <path d="M17 7L7 17M17 17L7 7" stroke="black" />
-            </svg>
-            <span class="panel__text">Close</span>
-          </button>
-          <div class="panel__inner">
-            <div class="panel__content">
-              <div class="newsletter">
-                <h2 class="newsletter__heading">Newsletter James Carter</h2>
-                <form id="newsletterForm" class="newsletter__form">
-                  <div class="newsletter__field">
-                    <input
-                      type="email"
-                      name="email"
-                      id="newsletterEmail"
-                      class="newsletter__input"
-                      placeholder=" "
-                      autocomplete="email"
-                      required
-                    />
-                    <label for="newsletterEmail" class="newsletter__label"
-                      >Email</label
-                    >
-                  </div>
-                  <label class="newsletter__checkbox">
-                    <input
-                      type="checkbox"
-                      class="newsletter__checkbox-input"
-                      name="consent"
-                      required
-                    />
-                    <span class="newsletter__checkbox-box"></span>
-                    <span class="newsletter__checkbox-label"
-                      >SUBSCRIBE TO RECEIVE INFORMATION ABOUT James Carter
-                      SHOWS, OFFERS, NEWS AND EVENTS.</span
-                    >
-                  </label>
-                  <p class="newsletter__note">
-                    You will receive a confirmation email with a link to
-                    complete subscription.
-                  </p>
-                  <button type="submit" class="newsletter__submit">
-                    Register
+        <div id="panelSearch" class="panel" data-state="closed">
+          <div class="panel__grid">
+            <button class="panel__close" type="button">
+              <svg
+                class="panel__icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path d="M17 7L7 17M17 17L7 7" stroke="black" />
+              </svg>
+              <span class="panel__text">Close</span>
+            </button>
+            <div class="panel__inner">
+              <div class="panel__content">
+                <form action="/find" method="GET" class="search">
+                  <input
+                    type="search"
+                    id="siteSearch"
+                    name="q"
+                    class="search__input"
+                    placeholder="Search"
+                    enterkeyhint="search"
+                    autocomplete="off"
+                  />
+                  <button type="button" class="search__clear" hidden>
+                    Clear
                   </button>
-                  <p class="newsletter__privacy">
-                    For further information on the processing of your personal
-                    data, please consult our
-                    <a
-                      href="/privacy-policy"
-                      class="newsletter__link"
-                      target="_blank"
-                      >privacy policy</a
-                    >.
-                  </p>
                 </form>
-                <div class="newsletter__done" hidden>
-                  Thank you for your registration
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="panelNewsletter" class="panel" data-state="closed">
+          <div class="panel__grid">
+            <button class="panel__close" type="button">
+              <svg
+                class="panel__icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path d="M17 7L7 17M17 17L7 7" stroke="black" />
+              </svg>
+              <span class="panel__text">Close</span>
+            </button>
+            <div class="panel__inner">
+              <div class="panel__content">
+                <div class="newsletter">
+                  <h2 class="newsletter__heading">Newsletter James Carter</h2>
+                  <form id="newsletterForm" class="newsletter__form">
+                    <div class="newsletter__field">
+                      <input
+                        type="email"
+                        name="email"
+                        id="newsletterEmail"
+                        class="newsletter__input"
+                        placeholder=" "
+                        autocomplete="email"
+                        required
+                      />
+                      <label for="newsletterEmail" class="newsletter__label"
+                        >Email</label
+                      >
+                    </div>
+                    <label class="newsletter__checkbox">
+                      <input
+                        type="checkbox"
+                        class="newsletter__checkbox-input"
+                        name="consent"
+                        required
+                      />
+                      <span class="newsletter__checkbox-box"></span>
+                      <span class="newsletter__checkbox-label"
+                        >SUBSCRIBE TO RECEIVE INFORMATION ABOUT James Carter
+                        SHOWS, OFFERS, NEWS AND EVENTS.</span
+                      >
+                    </label>
+                    <p class="newsletter__note">
+                      You will receive a confirmation email with a link to
+                      complete subscription.
+                    </p>
+                    <button type="submit" class="newsletter__submit">
+                      Register
+                    </button>
+                    <p class="newsletter__privacy">
+                      For further information on the processing of your personal
+                      data, please consult our
+                      <a
+                        href="/privacy-policy"
+                        class="newsletter__link"
+                        target="_blank"
+                        >privacy policy</a
+                      >.
+                    </p>
+                  </form>
+                  <div class="newsletter__done" hidden>
+                    Thank you for your registration
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </main>
 
     <footer class="footer">
       <nav class="footer__nav">

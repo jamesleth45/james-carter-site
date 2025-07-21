@@ -322,7 +322,7 @@ img {
 }
 
 @media (min-width: 80rem) {
-  .footer__list:nth-child(2) {
+  .footer__list:nt-child(2) {
     margin-top: 0;
   }
 }
