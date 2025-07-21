@@ -749,7 +749,7 @@ fieldset {
 
 .listing__description {
   margin-top: 0.8125rem;
-  margin-bottom: 5rem;
+  margin-bottom: 3.5rem;
 }
 
 @media (min-width: 80rem) {
