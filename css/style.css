@@ -624,6 +624,7 @@ fieldset {
 
 .hero {
   position: relative;
+  padding-top: 3.5rem;
 }
 
 .hero__grid {
