@@ -294,6 +294,10 @@ img {
   width: 100%;
 }
 
+.footer__lists {
+  grid-column: 3 / 11;
+}
+
 .footer__list {
   grid-column: 1 / -1;
 }
@@ -303,8 +307,6 @@ img {
     grid-column: span 2;
   }
 }
-
-/* 1st list — Region switcher */
 
 /* 2nd list — Main links */
 .footer__list:nth-child(2) {
