@@ -715,6 +715,7 @@ fieldset {
     top: 8.75rem;
     background-color: transparent;
     backdrop-filter: none;
+    width: auto;
   }
 }
 
