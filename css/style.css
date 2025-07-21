@@ -312,16 +312,10 @@ fieldset {
   }
 }
 
+/* 1st list — Mian */
 @media (min-width: 80rem) {
   .footer__list:nth-child(2) {
     margin-top: 0;
-  }
-}
-
-/* 5th list — Newsletter */
-@media (min-width: 80rem) {
-  .footer__list:nth-child(5) {
-    margin-right: 1.6875rem;
   }
 }
 
