@@ -708,25 +708,25 @@ img {
 /* #endregion */
 
 /* #region Product listing */
-.product-listing {
+.listing {
   padding-bottom: 6.25rem;
   margin-top: 3.5rem;
 }
 
 @media (min-width: 80rem) {
-  .product-listing {
+  .listing {
     margin-top: 8.75rem;
   }
 }
 
-.product-listing__grid {
+.listing__grid {
   display: grid;
   gap: 0;
   grid-template-columns: repeat(12, 1fr);
   width: 100%;
 }
 
-.product-listing__header {
+.listing__header {
   grid-column: 1 / -1;
   margin-left: 1.25rem;
   margin-right: 1.25rem;
@@ -735,27 +735,27 @@ img {
   align-items: flex-start; /* ← aligns them to the left */
 }
 
-.product-listing__heading {
+.listing__heading {
   line-height: 1.5625rem;
 }
 
-.product-listing__subtitle {
+.listing__subtitle {
   margin-top: 2.5rem;
 }
 
-.product-listing__description {
+.listing__description {
   margin-top: 0.8125rem;
   margin-bottom: 5rem;
 }
 
 @media (min-width: 80rem) {
-  .product-listing__header {
+  .listing__header {
     grid-column: 3 / 11;
     margin: 0;
   }
 }
 
-.product-listing__items {
+.listing__items {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-column: 1 / -1;
@@ -763,24 +763,24 @@ img {
 }
 
 @media (min-width: 48rem) {
-  .product-listing__items {
+  .listing__items {
     gap: 0.625rem;
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 80rem) {
-  .product-listing__items {
+  .listing__items {
     grid-column: 3 / 11;
   }
 }
 
-.product-listing__image-wrapper {
+.listing__image-wrapper {
   position: relative;
   overflow: hidden;
 }
 
-.product-listing__image {
+.listing__image {
   width: 100%;
   display: block;
   height: auto;
@@ -790,44 +790,44 @@ img {
   left: 0;
 }
 
-.product-listing__image--primary {
+.listing__image--primary {
   position: relative; /* sits above secondary */
   z-index: 2;
   opacity: 1;
 }
 
-.product-listing__image--secondary {
+.listing__image--secondary {
   z-index: 1;
   opacity: 0;
 }
 
-.product-listing__meta {
+.listing__meta {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
 
 @media (min-width: 80rem) {
-  .product-listing__meta {
+  .listing__meta {
     padding-left: 0;
   }
 }
 
-.product-listing__title {
+.listing__title {
   margin-top: 0.625rem;
   font-weight: 400;
 }
 
-.product-listing__info {
+.listing__info {
   display: flex;
   flex-direction: column;
   margin-top: 0.4375rem;
 }
 
-.product-listing__price {
+.listing__price {
   font-weight: 700;
 }
 
-.product-listing__tag {
+.listing__tag {
   font-weight: 400;
 }
 /* #endregion */
