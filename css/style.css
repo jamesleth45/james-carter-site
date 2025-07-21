@@ -300,7 +300,7 @@ img {
 .footer__lists {
   grid-column: 3 / 11;
   display: grid;
-  gap: 0;
+  gap: 0.625rem;
   grid-template-columns: repeat(8, 1fr);
   width: 100%;
 }
