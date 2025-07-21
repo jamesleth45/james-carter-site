@@ -717,7 +717,7 @@ fieldset {
     backdrop-filter: none;
     width: auto;
     padding: 0;
-    height: none;
+    height: auto;
   }
 }
 
