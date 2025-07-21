@@ -304,7 +304,6 @@ img {
 @media (min-width: 80rem) {
   .footer__lists {
     grid-column: 3 / 11;
-
     display: grid;
     gap: 0.625rem;
     grid-template-columns: repeat(8, 1fr);
