@@ -721,6 +721,12 @@ fieldset {
   margin-top: 1.25rem;
 }
 
+@media (min-width: 80rem) {
+  .listing__subtitle {
+    line-height: inherit;
+  }
+}
+
 .listing__description {
   margin-top: 0.8125rem;
   margin-bottom: 5rem;
