@@ -866,6 +866,6 @@ body:has(.listing) .footer {
   top: 8.75rem !important;
 }
 
-.shopify-buy__cart-toggle {
-  padding: 0 !important;
+.shopify-buy__icon-cart--side {
+  display: none !important;
 }
