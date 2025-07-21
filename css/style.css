@@ -717,7 +717,8 @@ fieldset {
 }
 
 .listing__subtitle {
-  margin-top: 2.5rem;
+  margin-top: 1.25rem;
+  line-height: 1.5625rem;
 }
 
 .listing__description {
