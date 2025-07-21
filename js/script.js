@@ -174,37 +174,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
-
-function replaceShopifyCartIconWithText() {
-  const iframe = document.querySelector(".shopify-buy-frame--toggle");
-  if (!iframe) {
-    return setTimeout(replaceShopifyCartIconWithText, 200); // Retry
-  }
-
-  iframe.addEventListener("load", () => {
-    try {
-      const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
-
-      const waitForIcon = setInterval(() => {
-        const icon = iframeDoc.querySelector('[data-element="toggle.icon"]');
-        if (icon) {
-          const bagText = iframeDoc.createElement("span");
-          bagText.textContent = "Bag";
-          bagText.style.fontFamily = "inherit";
-          bagText.style.fontSize = "0.875rem";
-          bagText.style.color = "black";
-          bagText.style.display = "inline-block";
-
-          icon.parentNode.replaceChild(bagText, icon);
-          clearInterval(waitForIcon);
-        }
-      }, 100);
-    } catch (e) {
-      console.error("⚠️ Cannot access Shopify iframe:", e);
-    }
-  });
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  setTimeout(replaceShopifyCartIconWithText, 1000);
-});
