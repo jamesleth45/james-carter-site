@@ -696,6 +696,11 @@ fieldset {
   }
 }
 
+.listing__controls {
+  position: sticky;
+  bottom: 0;
+}
+
 .listing__grid {
   display: grid;
   gap: 0;
