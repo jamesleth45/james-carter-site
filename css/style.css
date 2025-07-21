@@ -736,6 +736,10 @@ img {
   align-items: flex-start; /* ← aligns them to the left */
 }
 
+.product-listing__subtitle {
+  margin-top: 2.5rem;
+}
+
 .product-listing__description {
   margin-top: 1.875rem;
   margin-bottom: 5rem;
