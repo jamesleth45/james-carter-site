@@ -411,8 +411,8 @@ fieldset {
 }
 
 .panel__inner {
-  background-color: rgb(255, 255, 255, 0.9);
   backdrop-filter: blur(10px);
+  background-color: rgb(255, 255, 255, 0.9);
   display: block;
   grid-column: 1 / -1;
   overflow-y: auto;
@@ -463,9 +463,9 @@ fieldset {
 .nav {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   gap: 4.375rem;
   height: 100%;
+  justify-content: space-between;
 }
 
 .nav__item--space {
@@ -477,16 +477,16 @@ fieldset {
 }
 
 .nav__item--region {
-  margin-top: 1.875rem;
   font-weight: 700;
+  margin-top: 1.875rem;
 }
 
 .nav__link,
 .nav__button {
-  line-height: 1.5625rem;
-  width: 100%;
   display: block;
+  line-height: 1.5625rem;
   text-align: left;
+  width: 100%;
 }
 
 @media (min-width: 80rem) {
@@ -517,13 +517,13 @@ fieldset {
 }
 
 .newsletter__submit {
-  height: 2.75rem;
-  width: 100%;
-  border: 1px solid #000;
   background-color: #000;
+  border: 1px solid #000;
   color: #fff;
-  text-align: center;
+  height: 2.75rem;
   margin-top: 1.25rem;
+  text-align: center;
+  width: 100%;
 }
 
 .newsletter__submit:hover {
@@ -540,33 +540,30 @@ fieldset {
 }
 
 .newsletter__checkbox {
-  display: flex;
   align-items: flex-start;
-  gap: 0.625rem;
   cursor: pointer;
+  display: flex;
+  gap: 0.625rem;
   position: relative;
 }
 
-/* Hide the native checkbox */
 .newsletter__checkbox-input {
-  position: absolute;
   opacity: 0;
   pointer-events: none;
+  position: absolute;
 }
 
-/* Actual visual checkbox */
 .newsletter__checkbox-box {
   background-color: transparent;
-  height: 0.5625rem;
-  width: 0.5625rem;
   box-shadow: 0 0 0 0.0625rem inset, 0 0 0 0.125rem #fff inset;
   display: block;
   flex-shrink: 0;
+  height: 0.5625rem;
   position: relative;
   top: 0.1875rem;
+  width: 0.5625rem;
 }
 
-/* Fill it black when checked */
 .newsletter__checkbox-input:checked ~ .newsletter__checkbox-box {
   background-color: #000;
 }
@@ -574,8 +571,8 @@ fieldset {
 @media (min-width: 48rem) {
   .newsletter__checkbox-box {
     height: 0.5rem;
-    width: 0.5rem;
     top: 0.125rem;
+    width: 0.5rem;
   }
 }
 
@@ -583,14 +580,14 @@ fieldset {
   position: relative;
 }
 .newsletter__label {
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
 }
 
 .newsletter__label {
-  pointer-events: none;
   color: #999;
+  pointer-events: none;
   transform: translateY(0);
   transition: transform 450ms cubic-bezier(0.19, 1, 0.22, 1);
 }
