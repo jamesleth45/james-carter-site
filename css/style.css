@@ -337,7 +337,7 @@ fieldset {
   }
 }
 
-.page--shop .footer {
+body:has(.listing) .footer {
   padding-bottom: 3.5rem;
 }
 /* #endregion */
