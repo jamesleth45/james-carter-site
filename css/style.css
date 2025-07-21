@@ -337,6 +337,9 @@ fieldset {
   }
 }
 
+.page--shop .footer {
+  padding-bottom: 3.5rem;
+}
 /* #endregion */
 
 /* #region Panel */
