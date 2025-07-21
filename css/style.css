@@ -739,6 +739,7 @@ img {
 
 .product-listing__description {
   margin-top: 1.875rem;
+  margin-bottom: 5rem;
 }
 
 @media (min-width: 80rem) {
