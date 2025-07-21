@@ -448,7 +448,7 @@ img {
 @media (min-width: 80rem) {
   .panel__inner {
     display: grid;
-    grid-column: 9 / 13;
+    grid-column: 8 / 12;
     grid-template-columns: repeat(4, 1fr);
     padding: 8.75rem 1.6875rem 1.6875rem 0.625rem;
   }
