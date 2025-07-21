@@ -875,5 +875,5 @@ body:has(.listing) .footer {
 }
 
 .shopify-buy__cart {
-  width: 100%;
+  width: 1rem;
 }
