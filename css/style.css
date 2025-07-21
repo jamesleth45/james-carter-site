@@ -635,8 +635,8 @@ fieldset {
 
 .hero__link {
   grid-column: 1 / -1;
-  position: absolute;
   inset: 0;
+  position: absolute;
   z-index: 3;
 }
 
@@ -656,18 +656,18 @@ fieldset {
 }
 
 .hero__content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
   color: #fff;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
   z-index: 2;
 }
 
 .hero__heading {
-  font-size: 1.25rem;
   -webkit-font-smoothing: antialiased;
+  font-size: 1.25rem;
   font-family: "neue-haas-grotesk-display", "neue-haas-grotesk-display fallback",
     sans-serif;
   line-height: 1;
