@@ -283,7 +283,7 @@ img {
 
 @media (min-width: 80rem) {
   .footer {
-    padding: 1.6875rem 0;
+    padding-bottom: 1.6875rem;
   }
 }
 
