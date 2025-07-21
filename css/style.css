@@ -298,7 +298,7 @@ img {
   grid-column: 3 / 11;
   display: grid;
   gap: 0;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   width: 100%;
 }
 
