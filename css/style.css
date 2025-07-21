@@ -305,16 +305,6 @@ img {
 }
 
 /* 1st list — Region switcher */
-.footer__list:nth-child(1) {
-  font-weight: 700;
-}
-
-@media (min-width: 80rem) {
-  .footer__list:nth-child(1) {
-    margin-left: 1.6875rem;
-    opacity: 0;
-  }
-}
 
 /* 2nd list — Main links */
 .footer__list:nth-child(2) {
