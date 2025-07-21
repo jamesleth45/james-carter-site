@@ -720,7 +720,7 @@ fieldset {
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: none;
+    justify-content: initial;
   }
 }
 
